@@ -46,15 +46,6 @@
     grid-column: 1/2
     grid-row: 3/4
     margin: 2rem 0 0 5rem
-  .green-button
-    margin: 6rem 0 0 5rem
-    padding: 1rem
-    bottom: 2rem
-    width: 200px
-    background-color: rgb(9, 160, 72)
-    text-align: center
-    &:hover
-      background-color: rgb(9, 200, 72)
 
 //content
 //welcome section
@@ -161,7 +152,7 @@
 
 //company section
 .company-section
-  grid-template-columns: 2fr 1fr
+  grid-template-columns: 4fr 3fr
   font-family: arial, sans-serif
   color: $gray
   line-height: 1
@@ -170,18 +161,21 @@
     text-align: justify
     margin: 0 0 0 20px
     padding: 40px
-    h1
+    .green-button
+      margin: 2rem 0
+      bottom: 0
+    h2
       font-size: 2rem
       margin-bottom: 2rem
-      text-align: center
+      text-align: left
     p
       font-family: arial, sans-serif
-      font-size: 14pt
+      font-size: 1rem
       color: $gray
       line-height: 1.4
       margin-bottom: 0
   .company-left
-    background-image: url(../img/Zhatka-podborshchik-Valkov.gif)
+    background-image: url(../img/pereoborudovaniye-zhatki.gif)
     -webkit-background-size: cover
     background-size: cover
     z-index: 1
