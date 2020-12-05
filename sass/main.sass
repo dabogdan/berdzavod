@@ -8,7 +8,7 @@
   display: grid
 
 .container
-  width: 1200px
+  max-width: 1200px
   justify-content: center
   margin: auto
 
@@ -116,7 +116,6 @@
     height: 300px
     overflow: hidden
     justify-content: center
-    margin: auto
     color: white
     .offer1-img, .offer2-img, .offer3-img, .offer4-img
       -webkit-background-size: cover
@@ -266,5 +265,55 @@
     height: 100%
     width: 100%
     overflow: hidden
+
+//  
+.questions-section
+  background: linear-gradient(to top, rgb(9, 160, 72) 50%, white 50%)
+  .questions
+    justify-content: center
+    max-width: 1060px
+    font-family: arial, sans-serif
+    color: white
+    line-height: 1
+    background-color: #062c5e
+    text-align: center
+    margin: 2rem auto 0
+    padding: 40px
+    background-image: url(../img/Berdzavod-wrapbg3.png)
+    background-repeat: no-repeat
+    background-position: center
+    .phones
+      h1
+        font-size: 3rem
+        margin-bottom: 2rem
+        color: rgb(9, 160, 72)
+    .white-button
+      justify-content: center
+      margin: auto
+
+.footer
+  background-image: url(../img/Berdzavod-footerbg-1.webp)
+  -webkit-background-size: cover
+  background-size: cover
+  .container
+    max-width: 1080px
+    grid-template-columns: 2fr 1fr 1fr
+    grid-gap: 20px
+    justify-content: center
+    color: white
+
+    .trust
+      padding: 30px
+      text-align: center
+    .phone-no, .schedule
+      padding: 30px 10px 0
+  .copyright
+    color: white
+    text-align: center
+    padding: 30px
+    a
+      color: white
+      &:hover
+        text-decoration: underline
 
 @import "media" // Всегда в конце
