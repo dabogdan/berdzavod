@@ -45,7 +45,6 @@
   .header-text
     grid-column: 1/2
     grid-row: 3/4
-    margin: 0
     margin: 2rem 0 0 5rem
   .green-button
     margin: 6rem 0 0 5rem
@@ -54,8 +53,11 @@
     width: 200px
     background-color: rgb(9, 160, 72)
     text-align: center
+    &:hover
+      background-color: rgb(9, 200, 72)
 
 //content
+//welcome section
 .welcome-section
   grid-template-columns: repeat(2,1fr)
   font-family: arial, sans-serif
@@ -74,7 +76,7 @@
     p
       font-family: arial, sans-serif
       font-size: 14pt
-      color: hsl(165, 100%, 99%)
+      color: $white-text
       line-height: 1.4
   .welcome-right
     background-image: url(../img/pereoborudovaniye-zhatki.gif)
@@ -87,55 +89,60 @@
     height: 95%
     overflow: hidden
 
-
+//offers section
 .offers
-  max-width: 300px
+  width: 1000px
   grid-template-columns: repeat(4,1fr)
+  grid-column-gap: 10px
   justify-content: center
   margin: auto
-  .offer1
+  background-color: whitesmoke
+  -webkit-background-size: cover
+  background-size: cover
+  a
+    text-decoration: none
+    color: black
+    &:hover
+      color: rgb(9, 160, 72)
+      cursor: pointer
+  .offer
     width: 250px
     height: 300px
-    .offer1-image
-      background-image: url(../img/Berdzavod-offer-pic1.webp)
-      -webkit-background-size: cover
-      background-size: cover
-      background-position: center
-      width: 100%
-      height: 100%
-      transition: transform 0.3s ease-in-out
-      &:hover
-        transform: scale(1.1)
-  .offer2
-    .offer2-image
-      background-image: url(../img/Berdzavod-offer-pic2.webp)
-      -webkit-background-size: cover
-      background-size: cover
+    justify-content: center
+    margin: auto
+    box-shadow: 0 0 5px rgba(0,0,0,0.5)
+    text-align: center
+    p
+      font-size: .9rem
+    .offer-heading
+      h3
+        font-family: arial, helvetica, sans-serif
+        font-size: 1rem
+        margin-bottom: .7rem
+    .offer-card
       width: 250px
       height: 300px
-      transition: transform 0.3s ease-in-out
-      &:hover
-        transform: scale(1.1)
-  .offer3
-    .offer3-image
-      background-image: url(../img/Berdzavod-offer-pic3.webp)
-      -webkit-background-size: cover
-      background-size: cover
-      width: 250px
-      height: 300px
-      transition: transform 0.3s ease-in-out
-      &:hover
-        transform: scale(1.1)
-  .offer4
-    .offer4-image
-      background-image: url(../img/Berdzavod-offer-pic4.webp)
-      -webkit-background-size: cover
-      background-size: cover
-      width: 250px
-      height: 300px
-      transition: transform 0.3s ease-in-out
-      &:hover
-        transform: scale(1.1)
+      overflow: hidden
+      justify-content: center
+      margin: auto
+      .offer1-img, .offer2-img, .offer3-img, .offer4-img
+        -webkit-background-size: cover
+        background-size: cover
+        background-position: center
+        width: 100%
+        height: 100%
+        transition: transform 0.3s ease-in-out
+        &:hover
+          transform: scale(1.1)
+      .offer1-img
+        background-image: url(../img/Berdzavod-offer-pic1.webp)
+      .offer2-img
+        background-image: url(../img/Berdzavod-offer-pic2.webp)
+      .offer3-img
+        background-image: url(../img/Berdzavod-offer-pic3.webp)
+      .offer4-img
+        background-image: url(../img/Berdzavod-offer-pic4.webp)
+
 
 
 
