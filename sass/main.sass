@@ -20,7 +20,7 @@
   -webkit-background-size: cover
   background-size: cover
   min-height: 100%
-  font-family: arial
+  font-family: Arial
   color: white
   z-index: 1
   &::before
@@ -31,7 +31,7 @@
     right: 0
     bottom: 0
     left: 0
-    background-color: #293a43
+    background-color: $gray
     opacity: .4
   h1
     margin: 0 0 0 5rem
@@ -59,7 +59,7 @@
 //content
 //welcome section
 .welcome-section
-  grid-template-columns: repeat(2,1fr)
+  grid-template-columns: 1fr 1fr
   font-family: arial, sans-serif
   color: #09a048
   line-height: 1
@@ -78,15 +78,17 @@
       font-size: 14pt
       color: $white-text
       line-height: 1.4
+      margin-bottom: 0
   .welcome-right
-    background-image: url(../img/pereoborudovaniye-zhatki.gif)
+    background-image: url(../img/Zhatka-podborshchik-Valkov.gif)
     -webkit-background-size: cover
     background-size: cover
     z-index: 1
     position: relative
     padding: 40px
-    margin: 20px 20px
-    height: 95%
+    margin: 0
+    width: 100%
+    height: 100%
     overflow: hidden
 
 //offers section
@@ -99,51 +101,96 @@
   background-color: whitesmoke
   -webkit-background-size: cover
   background-size: cover
+  h3
+    font-family: arial, helvetica, sans-serif
+    font-size: 1rem
+    margin: 0 10px .7rem
+    padding-top: 3rem
+  p
+    font-size: .9rem
+    padding: 10px
   a
     text-decoration: none
     color: black
     &:hover
-      color: rgb(9, 160, 72)
+      color: white
       cursor: pointer
-  .offer
-    width: 250px
-    height: 300px
-    justify-content: center
+
+  .offer-card
     margin: auto
     box-shadow: 0 0 5px rgba(0,0,0,0.5)
     text-align: center
+    z-index: 1
+    width: 250px
+    height: 300px
+    overflow: hidden
+    justify-content: center
+    margin: auto
+    color: white
+    .offer1-img, .offer2-img, .offer3-img, .offer4-img
+      -webkit-background-size: cover
+      background-size: cover
+      background-position: center
+      width: 100%
+      height: 100%
+      transition: all 0.3s ease-in
+      position: relative
+      &:hover
+        transform: scale(1.1)
+      &::before
+        z-index: 0
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: $gray
+        opacity: .4
+      .offer-text
+        position: relative
+        z-index: 1
+    .offer1-img
+      background-image: url(../img/Berdzavod-offer-pic1.webp)
+    .offer2-img
+      background-image: url(../img/Berdzavod-offer-pic2.webp)
+    .offer3-img
+      background-image: url(../img/Berdzavod-offer-pic3.webp)
+    .offer4-img
+      background-image: url(../img/Berdzavod-offer-pic4.webp)
+
+//company section
+.company-section
+  grid-template-columns: 2fr 1fr
+  font-family: arial, sans-serif
+  color: $gray
+  line-height: 1
+  background-color: ghostwhite
+  .company-right
+    text-align: justify
+    margin: 0 0 0 20px
+    padding: 40px
+    h1
+      font-size: 2rem
+      margin-bottom: 2rem
+      text-align: center
     p
-      font-size: .9rem
-    .offer-heading
-      h3
-        font-family: arial, helvetica, sans-serif
-        font-size: 1rem
-        margin-bottom: .7rem
-    .offer-card
-      width: 250px
-      height: 300px
-      overflow: hidden
-      justify-content: center
-      margin: auto
-      .offer1-img, .offer2-img, .offer3-img, .offer4-img
-        -webkit-background-size: cover
-        background-size: cover
-        background-position: center
-        width: 100%
-        height: 100%
-        transition: transform 0.3s ease-in-out
-        &:hover
-          transform: scale(1.1)
-      .offer1-img
-        background-image: url(../img/Berdzavod-offer-pic1.webp)
-      .offer2-img
-        background-image: url(../img/Berdzavod-offer-pic2.webp)
-      .offer3-img
-        background-image: url(../img/Berdzavod-offer-pic3.webp)
-      .offer4-img
-        background-image: url(../img/Berdzavod-offer-pic4.webp)
-
-
+      font-family: arial, sans-serif
+      font-size: 14pt
+      color: $gray
+      line-height: 1.4
+      margin-bottom: 0
+  .company-left
+    background-image: url(../img/Zhatka-podborshchik-Valkov.gif)
+    -webkit-background-size: cover
+    background-size: cover
+    z-index: 1
+    position: relative
+    padding: 40px
+    margin: 0
+    height: 100%
+    width: 100%
+    overflow: hidden
 
 
 
