@@ -186,7 +186,85 @@
     width: 100%
     overflow: hidden
 
+//contact section
+.contact-section
+  background-color: rgb(9, 150, 72)
+  .contact-layout
+    grid-template-columns: 4fr 3fr
+    font-family: arial, sans-serif
+    color: white
+    line-height: 1
+    background-color: rgb(9, 150, 72)
+    .contact-left
+      text-align: justify
+      margin: 0 0 0 20px
+      padding: 40px
+      h1
+        margin-top: 1rem
+        font-size: 4rem
+      .certificate
+        grid-template-columns: 1fr 3fr
+        .certificate-pic
+          padding: 30px
+      .white-button
+        margin: 2rem 0
+        bottom: 0
+      h2
+        font-size: 2rem
+        margin-bottom: 2rem
+        text-align: left
+      p
+        font-family: arial, sans-serif
+        font-size: 1rem
+        line-height: 1.4
+        margin-bottom: 0
+    .contact-right
+      grid-column: 2/3
+      background-image: url(../img/Berdzavod-about-pic2.jpg)
+      -webkit-background-size: cover
+      background-size: cover
+      z-index: 1
+      position: relative
+      padding: 40px
+      margin: 0
+      height: 100%
+      width: 100%
+      overflow: hidden
 
-
+//re-equipment section
+.re-equipment-section
+  grid-template-columns: 4fr 3fr
+  font-family: arial, sans-serif
+  color: $gray
+  line-height: 1
+  background-color: ghostwhite
+  .re-equipment-right
+    text-align: justify
+    margin: 0 0 0 20px
+    padding: 40px
+    .green-button
+      margin: 2rem 0
+      bottom: 0
+    h2
+      font-size: 2rem
+      margin-bottom: 2rem
+      text-align: left
+    p
+      font-family: arial, sans-serif
+      font-size: 1rem
+      color: $gray
+      line-height: 1.4
+      margin-bottom: 0
+  .re-equipment-left
+    background-image: url(../img/zhatka-dlya-uborki-podsolnechnika.gif)
+    -webkit-background-size: cover
+    background-size: cover
+    z-index: 1
+    position: relative
+    padding: 40px
+    margin: 0
+    height: 100%
+    width: 100%
+    overflow: hidden
 
 @import "media" // Всегда в конце
