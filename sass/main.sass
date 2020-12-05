@@ -1,0 +1,91 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+.grid
+  display: grid
+
+.container
+  width: 1200px
+  justify-content: center
+  margin: auto
+
+//header
+.main-header
+  position: relative
+  background-image: url(/img/Berdzavod-slider-bg.webp)
+  overflow: hidden
+  -webkit-background-size: cover
+  background-size: cover
+  min-height: 100%
+  font-family: arial
+  color: white
+  z-index: 1
+  &::before
+    z-index: -1
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: #293a43
+    opacity: .4
+  h1
+    margin: 0 0 0 5rem
+    font-size: 4rem
+    line-height: 1
+    text-align: left
+  p
+    margin: 11rem 0 3rem 5rem
+    padding: 0
+    text-align: left
+  .header-text
+    grid-column: 1/2
+    grid-row: 3/4
+    margin: 0
+    margin: 2rem 0 0 5rem
+  .green-button
+    margin: 6rem 0 0 5rem
+    padding: 1rem
+    bottom: 2rem
+    width: 200px
+    background-color: rgb(9, 160, 72)
+    text-align: center
+
+//content
+.welcome-section
+  grid-template-columns: repeat(2,1fr)
+  font-family: arial, sans-serif
+  color: #09a048
+  line-height: 1
+  background-color: #293a43
+  opacity: .9
+  .welcome-left
+    text-align: justify
+    margin: 0 0 0 20px
+    padding: 40px
+    h1
+      font-size: 2rem
+      margin-bottom: 2rem
+      text-align: center
+    p
+      font-family: arial, sans-serif
+      font-size: 14pt
+      color: hsl(165, 100%, 99%)
+      line-height: 1.4
+  .welcome-right
+    background-image: url(/img/pereoborudovaniye-zhatki.gif)
+    -webkit-background-size: cover
+    background-size: cover
+    z-index: 1
+    position: relative
+    padding: 40px
+    margin: 20px 20px
+    height: 95%
+    overflow: hidden
+
+
+@import "media" // Всегда в конце
