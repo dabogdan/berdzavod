@@ -7,11 +7,6 @@
 .grid
   display: grid
 
-.container
-  max-width: 1200px
-  justify-content: center
-  margin: auto
-
 //header
 .main-header
   position: relative
@@ -330,6 +325,7 @@
   100%
     opacity: 1
 
+//appearing sections
 .appear-please
   opacity: 1
   transform: translate(0px)
@@ -338,6 +334,33 @@
 .gone
   opacity: 0
   transform: translate(0px, 20px)
+
+.scrollTop
+  z-index: 20
+  position: fixed
+  color: #fff
+  background: #555
+  border-radius: 50%
+  opacity: .7
+  bottom: 1em
+  right: 1em
+  padding: 9px 20px 0
+  margin-bottom: 13px
+  font-family: monospace
+  font-size: 30px
+  text-decoration: none
+  cursor: pointer
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  transition: .5s
+  &:hover
+    background: #333
+    opacity: .95
+    transition: .5s
+    box-shadow: 0 0 5px rgba(0,0,0,0.5)
 
 
 
