@@ -318,10 +318,9 @@
 
 //appearing text in the heading
 .appear-animation
-  .climbing-text
-    display: inline-block
-    transform: translateY(100%)
-    animation: appear 1.5s forwards
+  display: inline-block
+  transform: translateY(100%)
+  animation: appear 1.5s forwards
 
 @keyframes appear
   to
@@ -330,6 +329,15 @@
     opacity: 0
   100%
     opacity: 1
+
+.appear-please
+  opacity: 1
+  transform: translate(0px)
+  animation: appear 1.5s forwards
+
+.gone
+  opacity: 0
+  transform: translate(0px, 20px)
 
 
 
