@@ -10,10 +10,15 @@
 //header
 .main-header
   position: relative
-  background-image: url(../img/Berdzavod-slider-bg.webp)
+  background-image: url("../img/Berdzavod-slider-bg.webp"), url("../img/Berdzavod-slider-bg.jpg")
   overflow: hidden
+  background-position: center top
   -webkit-background-size: cover
   background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
+  -o-background-size: cover
+  -moz-background-size: cover
   min-height: 100%
   font-family: Arial
   color: white
@@ -169,7 +174,7 @@
       line-height: 1.4
       margin-bottom: 0
   .company-left
-    background-image: url(../img/pereoborudovaniye-zhatki.gif)
+    background-image: url(../img/pereoborudovaniye_zhatki.gif)
     -webkit-background-size: cover
     background-size: cover
     z-index: 1
@@ -287,7 +292,7 @@
       margin: auto
 
 .footer
-  background-image: url(../img/Berdzavod-footerbg-1.webp)
+  background-image: url("../img/Berdzavod-footerbg-1.webp"), url("../img/Berdzavod-footerbg-1.jpg")
   -webkit-background-size: cover
   background-size: cover
   .container
@@ -326,7 +331,7 @@
     opacity: 1
 
 //appearing sections
-.appear-please
+.appear
   opacity: 1
   transform: translate(0px)
   animation: appear 1.5s forwards
