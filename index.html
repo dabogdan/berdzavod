@@ -15,7 +15,7 @@
 
 <body>
 <!--scroll to Top button-->
-<div id="scrollTop" class="scrollTop" onclick="scrollUp()">^</div>
+<div id="scrollTop" class="scrollTop" onclick="scrollUp()">вверх</div>
 
 <!--header section-->
 <header class="main-header">
@@ -24,7 +24,7 @@
             Максимальные показатели-минимальные потери!</p>
         <h1>Бердянский <br>Завод Жаток</h1>
         <div class="header-text">Оснастка жатки и всё для уборки урожая</div>
-        <a href="">
+        <a href="#">
             <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
         </a>
     </div>
@@ -50,18 +50,28 @@
 </section>
 <!--./welcome-section-->
 
+<section class="products-epilogue scroll">
+    <h3>Все для уборки урожая</h3>
+    <h1>Продукция</h1>
+    <p>Классификация и модификация оборудования для реализации полевых работ во время жнив или косовицы. Тут вы
+        можете найти, выбрать и купить все для уборки урожая. Продукция Бердянского Завода для вашего хозяйства в
+        зависимости от методов комбайнирования будет иметь соответствующую оснастку.</p>
+</section>
+
 <!--offers section-->
 <section class="offers grid container scroll">
     <a href="#">
         <div class="offer-card">
             <div class="offer1-img">
                 <div class="offer-text">
-                    <h3>ЖАТКА ВАЛКОВАЯ ПРИЦЕПНАЯ И НАВЕСНАЯ</h3>
+                    <h3>ЖАТКИ</h3>
                     <p> Для уборки зерновых, бобовых, крупяных и прочих культур на свал. Для раздельного
                         комбайнирования.
                         Травяная
                         шнековая жатка.
-                    </p>
+                    </p><br>
+                    <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
+                    <p><br><br></p>
                 </div>
             </div>
         </div>
@@ -70,11 +80,13 @@
         <div class="offer-card">
             <div class="offer2-img">
                 <div class="offer-text">
-                    <h3>ЖАТКА ДЛЯ УБОРКИ ПОДСОЛНЕЧНИКА БЕЗРЯДКОВАЯ</h3>
+                    <h3>ПРИСТАВКИ ЖАТОК</h3>
                     <p>Переоборудование зерновой жатки вашего комбайна рапсовый стол, соевая приставка, и приспособление
                         для
                         уборки подсолнечника-лифтеры.
                     </p>
+                    <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
+                    <p><br><br><br></p>
                 </div>
             </div>
         </div>
@@ -83,11 +95,13 @@
         <div class="offer-card">
             <div class="offer3-img">
                 <div class="offer-text">
-                    <h3>СПЕЦТЕХНИКА. ТЕЛЕЖКА ДЛЯ ЖАТКИ. РЕМОНТ</h3>
+                    <h3> ПОДБОРЩИК ВАЛКОВ</h3>
                     <p>Жатка сплошного среза для использования независимо от междурядий. Безрядовая жатка для уборки
                         подсолнуха
                         ЖСН-6, ЖСН-7,4 и ЖСН-9,1 для любого комбайна
                     </p>
+                    <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
+                    <p><br><br></p>
                 </div>
             </div>
         </div>
@@ -96,11 +110,13 @@
         <div class="offer-card">
             <div class="offer4-img">
                 <div class="offer-text">
-                    <h3>ЖАТКА ВАЛКОВАЯ ПРИЦЕПНАЯ И НАВЕСНАЯ</h3>
+                    <h3>ТЕЛЕЖКА ДЛЯ ЖАТКИ.</h3>
                     <p>Тележка для перевозки жатки, погрузчик, измельчитель, подборщик. Ремонт и востановление жаток
                         (шнек,
                         мотовило, рама, настил днища). Переоборудование.
                     </p>
+                    <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
+                    <p><br><br><br></p>
                 </div>
             </div>
         </div>
@@ -109,29 +125,24 @@
 <!--./offers section-->
 
 <!--products section-->
-<section>
-    <div class="products-epilogue">
-        <h3>Все для уборки урожая</h3>
-        <h1>Продукция</h1>
-        <p>Классификация и модификация оборудования для реализации полевых работ во время жнив или косовицы. Тут вы
-            можете найти, выбрать и купить все для уборки урожая. Продукция Бердянского Завода для вашего хозяйства в
-            зависимости от методов комбайнирования будет иметь соответствующую оснастку.</p>
-    </div>
+<section class="goods">
+    <h1>Жатки:</h1>
     <div class="top-tabs-container">
-        <label for="main-tab-1">Жатка навесная и<br> валковая прицепная</label>
-        <label for="main-tab-2">Generated Tab 1</label>
-        <label for="main-tab-3">Generated Tab 2</label>
-        <label for="main-tab-4">Generated Tab 3</label>
-        <label for="main-tab-5">Generated Tab 4</label>
-        <label for="main-tab-6">Generated Tab 5</label>
+        <label for="main-tab-1">Валковая прицепная</label>
+        <label for="main-tab-2">Валковая навесная</label>
+        <label for="main-tab-3">Травяная</label>
+        <label for="main-tab-4">Зерновая и соевая</label>
+        <label for="main-tab-5">Для подсолнечника</label>
+        <!--        <label for="main-tab-6">Generated Tab 5</label>-->
     </div>
 
-    <!-- Tab Container -->
+    <!-- Tab Container 1 -->
     <input class="tab-radio" id="main-tab-1" name="main-group" type="radio" checked="checked"/>
     <div class="tab-content">
         <div class="sub-tabs-container">
             <label for="sub-tab-1">Описание</label>
             <label for="sub-tab-2">Характеристики</label>
+            <label for="sub-tab-3">Фото</label>
         </div>
         <!-- Sub Tab -->
         <input class="tab-radio" id="sub-tab-1" name="sub-group" type="radio" checked="checked">
@@ -375,19 +386,22 @@
                 </tbody>
             </table>
         </div>
+        <input class="tab-radio" id="sub-tab-3" name="sub-group" type="radio">
+        <div class="sub-tab-content">
+            <h1>Фото жатки валковой прицепной</h1>
+            <p>Фото</p>
+        </div>
     </div>
 
-
-    <!-- EXTRA TABS FOR SHOW & TESTING -->
-
-    <!-- Tab Container -->
+    <!-- Tab Container 2 -->
     <input class="tab-radio" id="main-tab-2" name="main-group" type="radio"/>
     <div class="tab-content">
         <div class="sub-tabs-container">
             <!-- NOTE: due to id note below, remember to match the for.
             The actual title doesn't matter, just to show it works... -->
-            <label for="sub-tab2-1">Solution 2</label>
-            <label for="sub-tab2-2">Skeleton 2</label>
+            <label for="sub-tab2-1">Описание</label>
+            <label for="sub-tab2-2">Характеристики</label>
+            <label for="sub-tab2-3">Фото</label>
         </div>
         <!-- Sub Tab -->
         <!-- NOTE: name="sub-group" will require to be unique to the tab,
@@ -395,93 +409,404 @@
         <!-- NOTE: id have to be unique. So for each sub tabs, the input id will have to change-->
         <input class="tab-radio" id="sub-tab2-1" name="sub-group2" type="radio" checked="checked">
         <div class="sub-tab-content">
-            <h1>Solution 2</h1>
-            <p>Solution content will go here! </p>
-            <ul>
-                <li>No JavaScript</li>
-                <li>100% Healthy, Plain CSS</li>
-                <li>Barely any hackery</li>
-                <li>Kind of verbose, HTML-wise...</li>
-            </ul>
+            <h2>Жатка валковая навесная</h2>
+            <p>Жатка валковая навесная ЖВУ-4; ЖВУ-5 и ЖВУ-6 для работы с самоходными косилками КПС-5Г и Е-301, Е 302;
+                Е-303. Покупка жатки модели ЖВУ дает возможность качественно скашивать зерновые и бобовые культуры.
+                Универсальная свальная жатка работает на уборке пшеницы, риса, гороха, ячменя, а также для трав.
+                Пятилопастное мотовило имеет противонаматывающий механизм. Другими словами, наклон граблин жатки
+                обеспечивает подъем полеглых растений при скашивании. Жатка валковая для Е-303 цена зависит от ширины
+                захвата. Наиболее популярной среди аграриев является ЖВУ-5 (5 метров). Более того, в конструкции мы
+                применили вариатор жатки ЖУ-6 комбайна ДОН-1500 Б.
+                Производство жаток ЖВУ происходит с 2002 года. А с 2004-2006 гг потребители получили возможность купить
+                жатку ЖВУ-4, ЖВУ-5 и ЖВУ-6, прошедшую сертификацию.Другими словами, ЖВУ соответствует требованиям ДСТУ
+                2189-93 и ГОСТ 12.2.11-82 и получила сертификат соответствия № UA1.032.0017615-06.</p>
         </div>
         <!-- Sub Tab -->
         <input class="tab-radio" id="sub-tab2-2" name="sub-group2" type="radio">
         <div class="sub-tab-content">
-            <h1>Skeleton 2</h1>
-            <p>Skeleton content will go here!</p>
-            <ul>
-                <li>No JavaScript</li>
-                <li>100% Healthy, Plain CSS</li>
-                <li>Barely any hackery</li>
-            </ul>
+            <h3>Характеристики жатки валковой прицепной (ЖВП)</h3>
+            <table border="5"
+                   style="width: 362px; border-style: outset; border-color: #5ba24e; margin-left: auto; margin-right: auto;"
+                   cellpadding="3" class="aligncenter" rules="all">
+                <tbody>
+                <tr>
+                    <td>Параметр</p>
+                    </td>
+                    <td>Единица измерения</p>
+                    </td>
+                    <td colspan="2">Значение</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Тип агрегатирования</td>
+                    <td></td>
+                    <td colspan="2">
+                        Прицепной для тракторов МТЗ-80, МТЗ-82, ЮМЗ-6, ЮМЗ-8
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Модель жатки прицепной
+                    </td>
+                    <td></td>
+                    <td>
+                        ЖВП-5,1
+                    </td>
+                    <td>
+                        ЖВП-6
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Конструкционная ширина захвата по боковинам
+                    </td>
+                    <td>
+                        м
+                    </td>
+                    <td>
+                        5,1
+                    </td>
+                    <td>
+                        6
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Продуктивность
+                    </td>
+                    <td>
+                        га/ч
+                    </td>
+                    <td>
+                        4,6
+                    </td>
+                    <td>
+                        5,4
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Скорость движения, не более
+                    </td>
+                    <td rowspan="3">
+                        Км/ч
+                    </td>
+                    <td colspan="2" rowspan="2">
+                        8
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        рабочая
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        транспортная
+                    </td>
+                    <td colspan="2">
+                        20
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Привод жатки
+                    </td>
+                    <td></td>
+                    <td colspan="2">
+                        планетарный редуктор МПН Шумахер
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Высота среза установочная
+                    </td>
+                    <td>
+                        мм
+                    </td>
+                    <td colspan="2">
+                        60-250
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Потери жатки при укалдки в валок, не более
+                    </td>
+                    <td>
+                        %
+                    </td>
+                    <td colspan="2">
+                        3-5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Частота вращения мотовила
+                    </td>
+                    <td>
+                        об/мин
+                    </td>
+                    <td colspan="2">
+                        37-61
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Масса
+                    </td>
+                    <td>
+                        Кг
+                    </td>
+                    <td>
+                        1400
+                    </td>
+                    <td>
+                        1500
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Шаг сегментов ножа
+                    </td>
+                    <td>
+                        Мм
+                    </td>
+                    <td colspan="2">
+                        76,2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ход ножа
+                    </td>
+                    <td>
+                        Мм
+                    </td>
+                    <td colspan="2">
+                        24
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Цикл работы ножа
+                    </td>
+                    <td>
+                        Цикл/мин
+                    </td>
+                    <td colspan="2">
+                        486
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Обслуживающий персонал
+                    </td>
+                    <td>
+                        чел
+                    </td>
+                    <td colspan="2">
+                        2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Трудоемкость монтажа в месте использования
+                    </td>
+                    <td>
+                        чел/час
+                    </td>
+                    <td colspan="2">
+                        2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Установленный ресурс, не менее
+                    </td>
+                    <td>
+                        ч
+                    </td>
+                    <td colspan="2">
+                        800
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Срок службы, не менее
+                    </td>
+                    <td>
+                        лет
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        10
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Sub Tab -->
+        <input class="tab-radio" id="sub-tab2-3" name="sub-group2" type="radio">
+        <div class="sub-tab-content">
+            <h2>Фото жатки волковой навесной</h2>
+            <p>Фото</p>
         </div>
     </div>
 
-    <!-- Tab Container -->
+    <!-- Tab Container 3 -->
     <input class="tab-radio" id="main-tab-3" name="main-group" type="radio"/>
     <div class="tab-content">
         <div class="sub-tabs-container">
             <!-- NOTE: due to id note below, remember to match the for-->
-            <label for="sub-tab3-1">Solution 3</label>
-            <label for="sub-tab3-2">Skeleton 3</label>
+            <label for="sub-tab3-1">Описание</label>
+            <label for="sub-tab3-2">Характеристики</label>
+            <label for="sub-tab3-3">Фото</label>
         </div>
         <!-- Sub Tab -->
         <input class="tab-radio" id="sub-tab3-1" name="sub-group3" type="radio" checked="checked">
         <div class="sub-tab-content">
-            <h1>Solution 3</h1>
-            <p>Solution content will go here! </p>
-            <ul>
-                <li>No JavaScript</li>
-                <li>100% Healthy, Plain CSS</li>
-                <li>Barely any hackery</li>
-                <li>Kind of verbose, HTML-wise...</li>
-            </ul>
+            <h2>Жатка травяная</h2>
+            <p>Для уборки трав и заготовки кормов и сена для КРС вы используете энергосредство, комбайн или самоходную
+                косилку КПС-5Г или Е-301, Е302 и Е 303. Своевременно купить жатку травяную или жатку для скашивания
+                травы это значит позаботиться о сезоне заготовки зеленых кормов и сенозаготовки. Цена жатки зависит от
+                размера режущей части. Более того, мы делаем продажи жаток 4, 5 и 6 метров, соотетственно ЖСТ-4, ЖСТ-5 и
+                ЖСТ-6.
+                Вместо ленточного транспортера транспортировка скошенной травы подаётся консольным шнеком на центральное
+                выбросное окно для формирования равномерного валка (на свал). Травяная жатка или жатка для травы
+                комплектуется режущим аппаратом с планетарным приводом ножей или МПН. Кроме того, МПН известен, как
+                Шумахер.</p>
         </div>
         <!-- Sub Tab -->
         <input class="tab-radio" id="sub-tab3-2" name="sub-group3" type="radio">
         <div class="sub-tab-content">
-            <h1>Skeleton 3</h1>
-            <p>Skeleton content will go here!</p>
-            <ul>
-                <li>No JavaScript</li>
-                <li>100% Healthy, Plain CSS</li>
-                <li>Barely any hackery</li>
-                <li>Kind of verbose, HTML-wise...</li>
-            </ul>
+            Характеристики
+        </div>
+        <!-- Sub Tab -->
+        <input class="tab-radio" id="sub-tab3-3" name="sub-group3" type="radio">
+        <div class="sub-tab-content">
+            <h2>Фото жатки травяной</h2>
+            <p>Фото</p>
         </div>
     </div>
 
-    <!-- Tab Container -->
+    <!-- Tab Container 4 -->
     <input class="tab-radio" id="main-tab-4" name="main-group" type="radio"/>
     <div class="tab-content">
         <div class="sub-tabs-container">
             <!-- NOTE: due to id note below, remember to match the for-->
-            <label for="sub-tab4-1">Solution</label>
-            <label for="sub-tab4-2">Skeleton</label>
+            <label for="sub-tab4-1">Описание</label>
+            <label for="sub-tab4-2">Характеристики</label>
+            <label for="sub-tab4-3">Фото</label>
         </div>
         <!-- Sub Tab -->
         <input class="tab-radio" id="sub-tab4-1" name="sub-group4" type="radio" checked="checked">
         <div class="sub-tab-content">
-            <h1>Solution</h1>
-            <p>Solution content will go here! </p>
-            <ul>
-                <li>No JavaScript</li>
-                <li>100% Healthy, Plain CSS</li>
-                <li>Barely any hackery</li>
-                <li>Kind of verbose, HTML-wise...</li>
-            </ul>
+            <h1>Жатка зерновая</h1>
+            <p>Жатка зерновая для прямого комбайнирования ЖЗЕ-4, ЖЗЕ-5, ЖЗЕ-6 с размерами режущей части 4, 5 и 6 метров.
+                Уборка зерновых, бобовых и технических культур с помощью этой жатки сделала её универсальной.</p>
+            <p>C помощью приставки возможно переоборудование жатки на уборку подсолнечника, а с помощью
+                стеблеподъемников вы можете косить бобовые культуры. Режущий аппарат жатки срезает стебли по принципу
+                ножниц. Планетарный привод зерновой жатки обеспечивает возвратно-поступательное движение косы жатки.
+                Неподвижные пальцы выполнены из чугуна или стали, на них установлены противорежущие пластины. А
+                подвижный нож жатки набранный из треугольных пластин-сегментов. Срезание происходит за счет
+                возвратно-поступательных движений ножа. При этом острые режущие кромки сегментов перерезают стебли.
+                Мотовило жатки зерновой подводит стебли срезаемого растений к режущего аппарата и удерживает их во время
+                пиления. Затем продвигает хлебную массу в центр платформы жатки. При уборке полеглых хлебов мотовило
+                выдвигается вперед и опускается низко.
+                Жатка зерновая ЖЗЕ-4, ЖЗЕ-5 для прямого комбайнирование устанавливается на комбайн СК-5 Нива, ЖЗЕ-6 и -7
+                на комбайн "Дон-1500" шириной 4, 5 и 6 и 7 метров соответственно. Также выполняем переоборудование
+                жатки под наклонную камеру таких комбайнов, как Кейс, Клаас, Мега, ЛЕКСИОН, Медион, Джон Дир, Нью
+                Холланд и Массей Фергюсон.
+                Цена жатки зерновой для комбайна зависит от комплектации и пожеланя заказчика. Привод мотовила вашей
+                будущей жатки может быть, как от гидромотора, так и цепным. Производство и продажа жаток происходит
+                преимущественно в зимний период. Поэтому мы рекомендуем заказывать жатку заранее.
+                Возможно установить систему копирования почвы «Автоконтур». Эта система зерновой жатки в автоматическом
+                режиме подстраивается к неровностям почвы. Более того, это происходит как в продольном, так и в
+                поперечном направлениях.</p>
+            <h2>Жатка соевая</h2>
+            <p>Жатка соевая, как разновидность зерновой жатки с системой копирования почвы.</p>
         </div>
         <!-- Sub Tab -->
         <input class="tab-radio" id="sub-tab4-2" name="sub-group4" type="radio">
         <div class="sub-tab-content">
-            <h1>Skeleton</h1>
-            <p>Skeleton content will go here!</p>
-            <ul>
-                <li>No JavaScript</li>
-                <li>100% Healthy, Plain CSS</li>
-                <li>Barely any hackery</li>
-                <li>Kind of verbose, HTML-wise...</li>
-            </ul>
+            <h3>Зерновая жатка ЖЗЕ-4; ЖЗЕ-5, ЖЗЕ-6; ЖЗЕ-7 технические характеристики</h3>
+            <table border="5"
+                   style="width: 362px; border-style: outset; border-color: #5ba24e; margin-left: auto; margin-right: auto;"
+                   cellpadding="3" class="aligncenter" rules="all">
+                <tbody>
+                <tr>
+                    <td>Название показателя</td>
+                    <td>Атрибут</td>
+                    <td>Значение</td>
+                </tr>
+                <tr>
+                    <td>Тип агрегатирования жатки</td>
+                    <td>навеска</td>
+                    <td>навесной фронтальный</td>
+                </tr>
+                <tr>
+                    <td>Ширина режущей части</td>
+                    <td>метр</td>
+                    <td>4; 5; 6; 7</td>
+                </tr>
+                <tr>
+                    <td>Рабочая скорость</td>
+                    <td>км/ч</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Транспортная скорость</td>
+                    <td>км/ч</td>
+                    <td>равна скорости комбайна</td>
+                </tr>
+                <tr>
+                    <td>Режущий аппарат</td>
+                    <td>коса жатки</td>
+                    <td>стальные или чугунные пальцы закрытого типа</td>
+                </tr>
+                <tr>
+                    <td>Привод ножа жатки</td>
+                    <td>редуктор</td>
+                    <td>планетарный привод Шумахер</td>
+                </tr>
+                <tr>
+                    <td>Шнек консольный</td>
+                    <td>цилиндрический</td>
+                    <td>Цельная поверхность с пальцами в центральной части</td>
+                </tr>
+                <tr>
+                    <td>Мотовило</td>
+                    <td>универсальное</td>
+                    <td>
+                        <p>Шестилопастное пружинного типа с двухсторонним эксцентриковым</p>
+                        <p>механизмом и жесткой центральной трубой</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Потери жатки при скашивании</td>
+                    <td>%</td>
+                    <td>0,5-1,5 в зависимости от полеглости урожая</td>
+                </tr>
+                <tr>
+                    <td>Высота среза колосьев</td>
+                    <td>мм</td>
+                    <td>50-200</td>
+                </tr>
+                <tr>
+                    <td>Масса жатки</td>
+                    <td>кг</td>
+                    <td>1600; 1850; 2010; 2300</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Sub Tab -->
+        <input class="tab-radio" id="sub-tab4-3" name="sub-group4" type="radio">
+        <div class="sub-tab-content">
+            <h1>Фото</h1>
+            <p>Фото</p>
         </div>
     </div>
 
@@ -490,32 +815,318 @@
     <div class="tab-content">
         <div class="sub-tabs-container">
             <!-- NOTE: due to id note below, remember to match the for-->
-            <label for="sub-tab5-1">Solution</label>
-            <label for="sub-tab5-2">Skeleton</label>
+            <label for="sub-tab5-1">Описание</label>
+            <label for="sub-tab5-2">Характеристики</label>
+            <label for="sub-tab5-3">Фото</label>
         </div>
         <!-- Sub Tab -->
         <input class="tab-radio" id="sub-tab5-1" name="sub-group5" type="radio" checked="checked">
         <div class="sub-tab-content">
-            <h1>Solution</h1>
-            <p>Solution content will go here! </p>
-            <ul>
-                <li>No JavaScript</li>
-                <li>100% Healthy, Plain CSS</li>
-                <li>Barely any hackery</li>
-                <li>Kind of verbose, HTML-wise...</li>
-            </ul>
+            <h3>Уборка подсолнечника</h3>
+            <h1>Жатка для уборки подсолнечника</h1>
+            <p>ЖАТКА ДЛЯ УБОРКИ ПОДСОЛНЕЧНИКА платформенного типа. Она предназначена для использования при скашивании
+                независимо от междурядий. Жатка для уборки подсолнечника ЖСН-6, ЖСН-7,4 и ЖСН-9,1 имеет режущий аппарат
+                с шириной, соответственно 6; 7,4 и 9,1 метров. Она сделана в соответствии с теми же строгими стандартами
+                контроля качества, что и вся продукция Завода. Жатка для подсолнуха устанавливается на любой комбайн и
+                имеет полную 2-летнюю гарантию.
+                Все карданные валы изготовлены с поверхностной термической обработкой, что обеспечивает долгий срок
+                службы и высокую производительность. Цельный подающий шнек жатки сконструирован без промежуточных опор.
+                А это обеспечивает равномерную подачу скошенной массы. Привод шнека защищен предохранительными муфтами.
+                Кроме того, все ответственные сопряжения изготовлены из материалов высокого качества.
+            </p>
+            <h2>Сплошное скашивание подсолнуха</h2>
+            <p>Жатка для подсолнечника ЖСН-6; ЖСН-7,4 и ЖСН-9,1 безрядкового типа обеспечивает высокую скорость и
+                сплошное скашивание подсолнуха и непрерывный сбор урожая. Благодаря этой технологии оператор комбайна
+                может двигаться в разных направлениях без снижения продуктивности уборочного оборудования.</p>
+            <h2>Лифтеры жатки</h2>
+            <p>Лифтеры жатки направляют их шляпки на косу подсолнечниковой жатки. Кроме того, это позволяет избежать
+                прямого контакта головок подсолнечника с мотовило. Поэтому, таким образом снижаются до минимума потери
+                семян. Положение лифтеров стеблеподъемников можно отрегулировать механически под размеры растений
+                (опция). В итоге, от этого зависит цена жатки на подсолнух. Более того, такие стеблеподъемники помогают
+                выпрямить стебли подсолнечника. А после прохода жатки для уборки подсолнечника на поле остаётся большая
+                часть стеблей. Таким образом, вы получаете чистый урожай и не перегружаете комбайн и жатку.
+            </p>
+            <h2>Мотовило и шнек жатки</h2>
+            <p>Мотовило работает синхронно с режущим ножом. Оно мягко направляет и подталкивает срезанные головки
+                подсолнечника к шнеку. Большой диаметр шнека жатки для уборки гарантирует равномерную подачу урожая к
+                молотилке комбайна. Мотовило и шнек жатки имеют фиксированное расстояние, что не изменяется.</p>
         </div>
         <!-- Sub Tab -->
         <input class="tab-radio" id="sub-tab5-2" name="sub-group5" type="radio">
         <div class="sub-tab-content">
-            <h1>Skeleton</h1>
-            <p>Skeleton content will go here!</p>
-            <ul>
-                <li>No JavaScript</li>
-                <li>100% Healthy, Plain CSS</li>
-                <li>Barely any hackery</li>
-                <li>Kind of verbose, HTML-wise...</li>
-            </ul>
+            <h3>Жатка для уборки подсолнечника ЖСН-6, ЖСН-7,4 и ЖСН-9,1 технические характеристики</h3>
+            <table border="5" style="width: 362px; border-style: outset; border-color: #5ba24e; margin-left: auto; margin-right: auto;" cellpadding="3" class="aligncenter" rules="all">
+                <tbody>
+                <tr>
+                    <td>
+                        <strong>№</strong>
+                    </td>
+                    <td>
+                        <strong>Наименование</strong>
+                    </td>
+                    <td>
+                        <strong>Единица измерения</strong>
+                    </td>
+                    <td>
+                        <strong>ЖСН-6</strong>
+                    </td>
+                    <td>
+                        <strong>ЖСН-7,4</strong>
+                    </td>
+                    <td>
+                        <strong>ЖСН-9.1</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Ширина режущего аппарата
+                    </td>
+                    <td>
+                        м
+                    </td>
+                    <td>
+                        6
+                    </td>
+                    <td>
+                        7,4
+                    </td>
+                    <td>
+                        9,1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        Скорость скашивания
+                    </td>
+                    <td>
+                        км/час
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        Транспортная скорость
+                    </td>
+                    <td>
+                        км/час
+                    </td>
+                    <td colspan="3">
+                        см. Инструкция&nbsp;<a href="http://berdzavod.com.ua/zhatki/zhsn">комбайна</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        Продуктивность скашивания
+                    </td>
+                    <td>
+                        га/час
+                    </td>
+                    <td colspan="3">
+                        см. Инструкцию комбайна
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        5
+                    </td>
+                    <td>
+                        Интервал высот скашиваемых растений
+                    </td>
+                    <td>
+                        мм
+                    </td>
+                    <td>
+                        230…850
+                    </td>
+                    <td>
+                        230…850
+                    </td>
+                    <td>
+                        230…850
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        6
+                    </td>
+                    <td>
+                        Шаг по осям стеблеподъемников
+                    </td>
+                    <td>
+                        мм
+                    </td>
+                    <td>
+                        228,6
+                    </td>
+                    <td>
+                        228,6
+                    </td>
+                    <td>
+                        228,6
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        7
+                    </td>
+                    <td>
+                        Частота двойных ходов ножа косы
+                    </td>
+                    <td>
+                        мин -1
+                    </td>
+                    <td>
+                        600
+                    </td>
+                    <td>
+                        600
+                    </td>
+                    <td>
+                        600
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        8
+                    </td>
+                    <td>
+                        Масса
+                    </td>
+                    <td>
+                        т
+                    </td>
+                    <td>
+                        1,7
+                    </td>
+                    <td>
+                        2,2
+                    </td>
+                    <td>
+                        2,8
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9
+                    </td>
+                    <td>
+                        Привод режущего аппарата
+                    </td>
+                    <td>&nbsp;</td>
+                    <td colspan="3">
+                        МПН типа "Шумахер"
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                        10
+                    </td>
+                    <td>
+                        Габаритные размеры
+                    </td>
+                    <td colspan="4">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        длина
+                    </td>
+                    <td rowspan="3">
+                        мм
+                    </td>
+                    <td>
+                        6350
+                    </td>
+                    <td>
+                        7950
+                    </td>
+                    <td>
+                        9650
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ширина
+                    </td>
+                    <td>
+                        2310
+                    </td>
+                    <td>
+                        2310
+                    </td>
+                    <td>
+                        2310
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        высота
+                    </td>
+                    <td>
+                        1100
+                    </td>
+                    <td>
+                        1100
+                    </td>
+                    <td>
+                        1100
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11
+                    </td>
+                    <td>
+                        Номинальный ресурс без обслуживания
+                    </td>
+                    <td>
+                        час
+                    </td>
+                    <td colspan="3">
+                        100
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        12
+                    </td>
+                    <td>
+                        Срок службы
+                    </td>
+                    <td>
+                        год
+                    </td>
+                    <td colspan="3">
+                        8
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Sub Tab -->
+        <input class="tab-radio" id="sub-tab5-3" name="sub-group5" type="radio">
+        <div class="sub-tab-content">
+            <h1>Фото</h1>
+            <p>Фото</p>
         </div>
     </div>
 
@@ -552,134 +1163,135 @@
             </ul>
         </div>
     </div>
-    <!--./products section -->
+</section>
+<!--./products section -->
 
-    <!--company section-->
-    <section class="company-section grid container scroll">
-        <div class="company-left"></div>
-        <div class="company-right">
-            <h3>О предприятии</h3>
-            <h2>Производство современных жаток
-            </h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit,
-                auctor eget purus.</h4>
-            <p>
-                Phasellus scelerisque sapien sit amet mauris laoreet, eget scelerisque nunc cursus. Duis ultricies
-                malesuada
-                leo vel aliquet. Curabitur rutrum porta dui eget mollis. Nullam lacinia dictum auctor. Class aptent
-                taciti
-                sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient.
-            </p>
-            <a href="">
-                <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
-            </a>
-        </div>
-    </section>
-    <!--./company-section-->
+<!--company section-->
+<section class="company-section grid container scroll">
+    <div class="company-left"></div>
+    <div class="company-right">
+        <h3>О предприятии</h3>
+        <h2>Производство современных жаток
+        </h2>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit,
+            auctor eget purus.</h4>
+        <p>
+            Phasellus scelerisque sapien sit amet mauris laoreet, eget scelerisque nunc cursus. Duis ultricies
+            malesuada
+            leo vel aliquet. Curabitur rutrum porta dui eget mollis. Nullam lacinia dictum auctor. Class aptent
+            taciti
+            sociosqu ad litora torquent per conubia
+            nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient.
+        </p>
+        <a href="">
+            <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
+        </a>
+    </div>
+</section>
+<!--./company-section-->
 
-    <!--contact section-->
-    <section class="contact-section scroll">
-        <div class="contact-layout grid container">
-            <div class="contact-left">
-                <h1>Fusce lobortis <br>odio libero</h1>
-                <div class="grid certificate">
-                    <div class="certificate-pic">
-                        <img src="img/Berdzavod-icon1.png" alt="">
-                    </div>
-                    <div class="certificate-text">
-                        <h2>Vivamus in diam turpis. In magnis maximus tristique. Maecenas non nostra.</h2>
-                    </div>
-                    <a href="">
-                        <div class="white-button">УЗНАТЬ БОЛЬШЕ</div>
-                    </a>
+<!--contact section-->
+<section class="contact-section scroll">
+    <div class="contact-layout grid container">
+        <div class="contact-left">
+            <h1>Fusce lobortis <br>odio libero</h1>
+            <div class="grid certificate">
+                <div class="certificate-pic">
+                    <img src="img/Berdzavod-icon1.png" alt="">
                 </div>
-            </div>
-            <div class="contact-right">
+                <div class="certificate-text">
+                    <h2>Vivamus in diam turpis. In magnis maximus tristique. Maecenas non nostra.</h2>
+                </div>
+                <a href="">
+                    <div class="white-button">УЗНАТЬ БОЛЬШЕ</div>
+                </a>
             </div>
         </div>
-    </section>
-    <!--contact section-->
+        <div class="contact-right">
+        </div>
+    </div>
+</section>
+<!--contact section-->
 
-    <!--re-equipment section-->
-    <section class="re-equipment-section grid container scroll">
-        <div class="re-equipment-left"></div>
-        <div class="re-equipment-right">
-            <h3>Переоборудование жатки при уборке урожая</h3>
-            <h2>Приставка и оснастка для зерновой жатки</h2>
+<!--re-equipment section-->
+<section class="re-equipment-section grid container scroll">
+    <div class="re-equipment-left"></div>
+    <div class="re-equipment-right">
+        <h3>Переоборудование жатки при уборке урожая</h3>
+        <h2>Приставка и оснастка для зерновой жатки</h2>
 
-            <h4><i>Приспособление для уборки рапса, рапсовый стол</i></h4>
-            <h4><i>Соевая приставка, приставка для уборки сои Флекс</i></h4>
-            <h4><i>Приставка для уборки подсолнечника, лифтера для подсолнуха</i></h4>
+        <h4><i>Приспособление для уборки рапса, рапсовый стол</i></h4>
+        <h4><i>Соевая приставка, приставка для уборки сои Флекс</i></h4>
+        <h4><i>Приставка для уборки подсолнечника, лифтера для подсолнуха</i></h4>
+        <p>
+            Зерновая жатка, которая является основным оборудованием каждого зерноуборочного комбайна, применяется
+            скашивания зерновых и бобовых культур. Переоборудование жатки при уборке урожая рапса, сои,
+            подсолнечника мы
+            выполняем с помощью прицепной оснастки.
+        </p>
+        <p>
+            Приспособление для жатки зерновой снижает до минимума потери при скашивании урожая.
+        </p>
+        <a href="">
+            <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
+        </a>
+    </div>
+</section>
+<!--./company-section-->
+
+<!--questions-section-->
+<section class="questions-section scroll">
+    <div class="questions container">
+        <h1>Если у Вас остались вопросы, Вы можете <br>обратиться к нашим специалистам</h1>
+        <div class="phones"><h1>(050)0317543<br><br>(098)0317543</h1></div>
+        <a href="">
+            <div class="white-button">Отправить сообщение</div>
+        </a>
+    </div>
+</section>
+<!--./questions-section-->
+
+<!--footer-->
+<footer class="footer scroll">
+    <div class="container grid">
+        <div class="trust">
+            <h3>Доверяйте профессионалам. Опыт в создании жаток с 2000 года.</h3>
+            <img class="" src="img/Berdzavod.png" data-height="60"
+                 alt="Бердянский Завод Жаток" data-no-retina>
+        </div>
+        <div class="phone-no">
             <p>
-                Зерновая жатка, которая является основным оборудованием каждого зерноуборочного комбайна, применяется
-                скашивания зерновых и бобовых культур. Переоборудование жатки при уборке урожая рапса, сои,
-                подсолнечника мы
-                выполняем с помощью прицепной оснастки.
+                <strong>Наша адреса:</strong>
+                <br>71100, Україна, Запорізька область,
+                <br>Бердянськ, вул. Матвеєва 1а
+                <br>Телефони:
+                <br>+38(066)749-25-82,
+                <br>+38(097)42-11-44-7,
+                <br>(050)0317543,
+                <br>(098)0317543,
+                <br>(061)2140129
+                <br>office@zavod-zhatok.com.ua
             </p>
+        </div>
+        <div class="schedule">
             <p>
-                Приспособление для жатки зерновой снижает до минимума потери при скашивании урожая.
+                <strong>Розклад роботи:</strong>
+                <br> Понеділок - П'ятниця: 8:00 - 18:00
+                <br> Субота: 9:00 - 16:00
             </p>
-            <a href="">
-                <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
-            </a>
         </div>
-    </section>
-    <!--./company-section-->
+    </div>
+    <div class="copyright">&copy; 2000-2020 Berdzavod - Бердянский Завод Жаток.<a target="_blank" rel="follow"
+                                                                                  href="https://zavod-zhatok.com.ua">
+        Производство и ремонт жаток</a>
+    </div>
+</footer>
+<!--./footer-->
 
-    <!--questions-section-->
-    <section class="questions-section scroll">
-        <div class="questions container">
-            <h1>Если у Вас остались вопросы, Вы можете <br>обратиться к нашим специалистам</h1>
-            <div class="phones"><h1>(050)0317543<br><br>(098)0317543</h1></div>
-            <a href="">
-                <div class="white-button">Отправить сообщение</div>
-            </a>
-        </div>
-    </section>
-    <!--./questions-section-->
-
-    <!--footer-->
-    <footer class="footer scroll">
-        <div class="container grid">
-            <div class="trust">
-                <h3>Доверяйте профессионалам. Опыт в создании жаток с 2000 года.</h3>
-                <img class="" src="img/Berdzavod.png" data-height="60"
-                     alt="Бердянский Завод Жаток" data-no-retina>
-            </div>
-            <div class="phone-no">
-                <p>
-                    <strong>Наша адреса:</strong>
-                    <br>71100, Україна, Запорізька область,
-                    <br>Бердянськ, вул. Матвеєва 1а
-                    <br>Телефони:
-                    <br>+38(066)749-25-82,
-                    <br>+38(097)42-11-44-7,
-                    <br>(050)0317543,
-                    <br>(098)0317543,
-                    <br>(061)2140129
-                    <br>office@zavod-zhatok.com.ua
-                </p>
-            </div>
-            <div class="schedule">
-                <p>
-                    <strong>Розклад роботи:</strong>
-                    <br> Понеділок - П'ятниця: 8:00 - 18:00
-                    <br> Субота: 9:00 - 16:00
-                </p>
-            </div>
-        </div>
-        <div class="copyright">&copy; 2000-2020 Berdzavod - Бердянский Завод Жаток.<a target="_blank" rel="follow"
-                                                                                      href="https://zavod-zhatok.com.ua">
-            Производство и ремонт жаток</a>
-        </div>
-    </footer>
-    <!--./footer-->
-
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/products.css">
-    <script src="js/scripts.min.js"></script>
-    <script src="js/scroll.js"></script>
+<link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="css/products.css">
+<script src="js/scripts.min.js"></script>
+<script src="js/scroll.js"></script>
 
 </body>
 </html>
