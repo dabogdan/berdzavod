@@ -9,9 +9,43 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .main-header
+    h1
+      font-size: 3rem
+  .welcome-section
+    grid-template-columns: 1fr
+    .welcome-right
+      height: 500px
+
+  .offers
+    grid-template-columns: 1fr 1fr
+    .float-right
+      margin-right: 0
+    .float-left
+      margin-left: 0
+
+  .goods
+    overflow-y: scroll
+    h1
+      padding-left: 20px
 
 
+  .company-section
+    grid-template-columns: 1fr
+    .company-left
+      height: 500px
+
+  .footer
+    .footer-info
+      grid-template-columns: 1fr
+      .trust
+        padding: 0
+      .phone-no
+        text-align: center
+        padding: 0
+      .schedule
+        text-align: center
+        padding: 0
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
@@ -19,8 +53,25 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .main-header
+    .appear-animation
+      margin-left: 2rem
+    h1
+      font-size: 2rem
+    p
+      margin-top: 7rem
+      font-size: 13px
 
+  .offers
+    grid-template-columns: 1fr
+    .offer-card
+      width: 250px
+      .green-button
+        margin: 0 auto
+    .float-right
+      margin-right: auto
+    .float-left
+      margin-left: auto
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
