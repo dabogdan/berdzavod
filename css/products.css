@@ -30,6 +30,10 @@ label input:checked {
     display: none;
 }
 
+.sub-tab-content h1 {
+    text-align: left;
+}
+
 .tab-radio:checked + .tab-content,
 .tab-radio:checked + .sub-tab-content {
     display: block;
