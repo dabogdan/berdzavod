@@ -1821,25 +1821,48 @@
 <!--./trolley section -->
 
 <!--company section-->
-<section class="company-section grid container scroll">
+<section class="company-section grid container scroll" onclick="beginCounting()">
     <div class="company-left"></div>
     <div class="company-right">
         <h3>О предприятии</h3>
-        <h2>Производство современных жаток
-        </h2>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit,
-            auctor eget purus.</h4>
-        <p>
-            Phasellus scelerisque sapien sit amet mauris laoreet, eget scelerisque nunc cursus. Duis ultricies
-            malesuada
-            leo vel aliquet. Curabitur rutrum porta dui eget mollis. Nullam lacinia dictum auctor. Class aptent
-            taciti
-            sociosqu ad litora torquent per conubia
-            nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient.
-        </p>
+        <h2>Производство современных жаток</h2>
+        <h3>Начало производственной деятельности</h3>
+        <h4>Переоборудование и ремонт жаток</h4>
+        <p>Наше предприятие было сформировано сразу после распада и ликвидации Первомайского завода сельхозмашин.
+            Инженерно-технический персонал которого втянулся в наши ряды. Переоборудование и ремонт жаток составлял 95%
+            заказов нашего молодого предприятия. Это было началом и стартом для самостоятельного проектирования и
+            производства уборочной и вспомогательной техники для комбайнов и тракторов.</p>
+        <!-- Сразу после текста pristavka dlya uborki podsolnechnika.webm -->
+        <p>2000-2003 года-ремонт и обновление существующего парка сельско-хозяйственных фирм и предприятий. А это жатки
+            навесные, прицепные, валковые свальные, кукурузные жатки, жатка для уборки подсолнечника. Формирование
+            команды профессионалов Бердянского Завода в тяжелых экономических условиях...</p>
         <a href="">
-            <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
+            <div class="green-button" id="about-company-btn">УЗНАТЬ БОЛЬШЕ</div>
         </a>
+        <h2>Наши достижения</h2>
+        <div class="counter grid">
+            <div class="counter-item">
+                <div class="count_box box_hover">
+                    <h3><span class="timer">425</span></h3>
+                    <h4>позиций<br>
+                    ПРОИЗВОДИМ</h4>
+                </div>
+            </div>
+            <div class="counter-item">
+                <div class="count_box box_hover">
+                    <h3><span class="timer">21200</span></h3>
+                    <h4>единиц <br>
+                    ПРОДАНО</h4>
+                </div>
+            </div>
+            <div class="counter-item">
+                <div class="count_box box_hover">
+                    <h3><span class="timer">800</span></h3>
+                    <h4>единиц<br>
+                    ОТРЕМОНТИРОВАНО</h4>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!--./company-section-->
@@ -1944,10 +1967,12 @@
 
 <link rel="stylesheet" href="css/main.min.css">
 <link rel="stylesheet" href="css/products.css">
+<link rel="stylesheet" href="css/counter.css">
 <script src="js/scripts.min.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/eventholder.js"></script>
 <script src="js/overlay.js"></script>
+<script src="js/counter.js"></script>
 <link rel="stylesheet" href="css/overlay.css">
 
 </body>

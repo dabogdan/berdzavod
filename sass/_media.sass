@@ -37,6 +37,14 @@
     grid-template-columns: 1fr
     .company-left
       height: 500px
+    .company-right
+      h2
+        margin: auto
+        text-align: center
+      .counter
+        .counter-item
+          width: 200px
+          margin: auto
 
   .footer
     .footer-info
@@ -51,8 +59,16 @@
         padding: 0
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
-
+  .company-section
+    .company-right
+      h2
+        text-align: center
+      .counter
+        grid-template-columns: 1fr
+        margin: 0 auto
+        .counter-item
+          margin: auto
+          width: 300px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

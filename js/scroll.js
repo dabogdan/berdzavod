@@ -9,6 +9,7 @@ if(window.innerWidth >= 992) {
             if (elPos <= pos) {
                 el.classList.add('appear')
                 el.classList.remove('gone')
+
             } else {
                 el.classList.remove('appear')
                 el.classList.add('gone')

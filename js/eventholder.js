@@ -96,8 +96,8 @@ if (window.innerWidth > 992) {
         trolley.classList.add('none');
     })
     vCloseBtn[0].addEventListener('click', () => {
-        pristavki.classList.add("none");
-        pristavki.classList.remove("display-block");
+        valkov.classList.add("none");
+        valkov.classList.remove("display-block");
     });
 } else if (window.innerWidth <= 992) {
     valkov.setAttribute('id', 'popup-valkov');
@@ -149,3 +149,9 @@ if (window.innerWidth > 992) {
         trolley.classList.remove("visible");
     });
 }
+
+// about company button
+const aboutCompanyBtn = document.getElementById('about-company-btn');
+aboutCompanyBtn.addEventListener('click', () => {
+
+})
