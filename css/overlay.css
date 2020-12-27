@@ -1,5 +1,5 @@
 
-#popup-zhatki {
+#popup-zhatki, #popup-pristavki, #popup-valkov, #popup-trolley {
     display: none;
     position:absolute;
     left: 0;
@@ -9,7 +9,10 @@
     background: rgba(255,255,255,0.85);
 }
 
-#popup-zhatki.visible {
+#popup-zhatki.visible,
+#popup-pristavki.visible,
+#popup-valkov.visible,
+#popup-trolley.visible {
     display: block;
     justify-content:center;
     align-items:center;
@@ -27,7 +30,10 @@
     align-items:center;
 }
 
-.close-button {
+.close-button,
+.pr-close-button,
+.v-close-button,
+.t-close-button {
     margin: 1.5rem;
     width: 2rem;
     float: right;

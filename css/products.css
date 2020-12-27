@@ -1,7 +1,7 @@
 /* FONT */
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
-
+/*zhatki*/
 /* Main Tabs */
 label {
     background-color: #00262f;
@@ -20,37 +20,65 @@ label input:checked {
     background-color: red;
 }
 
-.tab-radio {
+.tab-radio, .pr-tab-radio, .v-tab-radio, .t-tab-radio {
     display: none;
 }
 
 /* Tabs behaviour, hidden if not checked/clicked */
-.sub-tab-content,
-.tab-content {
+.sub-tab-content, .tab-content,
+.pr-sub-tab-content, .pr-tab-content,
+.v-sub-tab-content, .v-tab-content,
+.t-sub-tab-content, .t-tab-content {
     display: none;
 }
 
-.sub-tab-content h1 {
+.sub-tab-content h1,
+.pr-sub-tab-content h1,
+.v-sub-tab-content h1,
+.t-sub-tab-content h1,
+.sub-tab-content h2,
+.pr-sub-tab-content h2,
+.v-sub-tab-content h2,
+.t-sub-tab-content h2,
+.sub-tab-content h3,
+.pr-sub-tab-content h3,
+.v-sub-tab-content h3,
+.t-sub-tab-content h3{
     text-align: left;
 }
 
 .tab-radio:checked + .tab-content,
-.tab-radio:checked + .sub-tab-content {
+.tab-radio:checked + .sub-tab-content,
+.pr-tab-radio:checked + .pr-tab-content,
+.pr-tab-radio:checked + .pr-sub-tab-content,
+.v-tab-radio:checked + .v-tab-content,
+.v-tab-radio:checked + .v-sub-tab-content,
+.t-tab-radio:checked + .t-tab-content,
+.t-tab-radio:checked + .t-sub-tab-content{
     display: block;
 }
 
 /* Sub-tabs */
-.sub-tabs-container label {
+.sub-tabs-container label,
+.pr-sub-tabs-container label,
+.v-sub-tabs-container label,
+.t-sub-tabs-container label{
     background-color: #cddc39;
     color: #030700;
 }
 
-.sub-tabs-container label:hover {
+.sub-tabs-container label:hover,
+.pr-sub-tabs-container label:hover,
+.v-sub-tabs-container label:hover,
+.t-sub-tabs-container label:hover {
     background-color: #AFB42B;
 }
 
 /* Tabs Content */
-.tab-content {
+.tab-content,
+.pr-tab-content,
+.v-tab-content,
+.t-tab-content {
     padding: 30px;
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -59,15 +87,6 @@ label input:checked {
 }
 
 /* General */
-
-/*body {*/
-/*    width: 90%;*/
-/*    margin: 10px auto;*/
-/*    background-color: #ecf0f1;*/
-/*    font-family: Lato, sans-serif;*/
-/*    letter-spacing: 1px;*/
-/*}*/
-
 *, *:hover {
     transition: all .3s;
 }
