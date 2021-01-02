@@ -7,14 +7,10 @@ const onscrollTag = document.getElementById('on_scroll_counter');
 
 function handler(entries, observer) {
     for (entry of entries) {
-        // console.log(entry);
-
-        // onscrollTag.textContent = entry.isIntersecting;
-
         if (entry.isIntersecting) {
             beginCounting();
         } else {
-            console.log('nothing is happening')
+            //add code
         }
     }
 }
@@ -28,7 +24,6 @@ observer.observe(document.getElementById("on_scroll_counter"));
 
 
 let beginCounting = () => {
-    console.log("it works")
     const animationDuration = 2000;
     const frameDuration = 1000 / 30;
     const totalFrames = Math.round(animationDuration / frameDuration);

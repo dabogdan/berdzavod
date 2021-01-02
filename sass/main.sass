@@ -124,18 +124,28 @@
     overflow: hidden
     justify-content: center
     color: white
+    .offer1-img
+      background: url(../img/Berdzavod-offer-pic1.webp)
+    .offer2-img
+      background-image: url(../img/Berdzavod-offer-pic2.webp)
+    .offer3-img
+      background-image: url(../img/Berdzavod-offer-pic3.webp)
+    .offer4-img
+      background-image: url(../img/Berdzavod-offer-pic4.webp)
     .offer1-img, .offer2-img, .offer3-img, .offer4-img
       -webkit-background-size: cover
       background-size: cover
       background-position: center
       width: 100%
+      max-width: 500px
+      max-height: 500px
       height: 100%
       transition: all 0.3s ease-in
       position: relative
       &:hover
         //transform: scale(1.1)
         cursor: pointer
-      &::before
+      &::before, &:active
         z-index: 0
         content: ''
         position: absolute
@@ -150,14 +160,7 @@
         z-index: 1
         &:hover
           background-color: rgba(0,0,0,0.5)
-    .offer1-img
-      background-image: url(../img/Berdzavod-offer-pic1.webp)
-    .offer2-img
-      background-image: url(../img/Berdzavod-offer-pic2.webp)
-    .offer3-img
-      background-image: url(../img/Berdzavod-offer-pic3.webp)
-    .offer4-img
-      background-image: url(../img/Berdzavod-offer-pic4.webp)
+
     .green-button
       padding: .5rem
       margin: 0 1rem

@@ -32,7 +32,7 @@ function scrollUpButtonAppear() {
 }
 
 function scrollUp() {
-    var y1 = window.scrollY;
+    let y1 = window.scrollY;
     y1 = y1 - 30;
     window.scrollTo(0, y1);
     if (y1 > 0) {

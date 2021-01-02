@@ -114,7 +114,7 @@ if (window.innerWidth > 992) {
 
 
 //trolley
-const trolley = document.getElementById('trolley');
+let trolley = document.getElementById('trolley');
 const trolleyCard = document.getElementById('trolley-card');
 const tCloseBtn = document.querySelectorAll('.t-close-button');
 
@@ -140,6 +140,8 @@ if (window.innerWidth > 992) {
 } else if (window.innerWidth <= 992) {
     trolley.setAttribute('id', 'popup-trolley');
     trolleyCard.addEventListener("click", () => {
+        console.log('ok');
+
         trolley.classList.add("visible");
         trolley.classList.remove("none");
     });
