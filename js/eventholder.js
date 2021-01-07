@@ -153,7 +153,23 @@ if (window.innerWidth > 992) {
 }
 
 // about company button
-const aboutCompanyBtn = document.getElementById('about-company-btn');
+const aboutCompanyBtn = document.getElementById('about-company-btn-1');
+const aboutCompanyBtn2 = document.getElementById('about-company-btn-2');
+const historyDescription = document.getElementById('expanded-history');
 aboutCompanyBtn.addEventListener('click', () => {
+    historyDescription.classList.add('display-block');
+    historyDescription.classList.remove('none');
+    aboutCompanyBtn.classList.add('none');
+    aboutCompanyBtn.classList.remove('display-block');
+    aboutCompanyBtn2.classList.add('display-block');
+    aboutCompanyBtn2.classList.remove('none');
+})
 
+aboutCompanyBtn2.addEventListener('click',()=> {
+    historyDescription.classList.remove('display-block');
+    historyDescription.classList.add('none');
+    aboutCompanyBtn.classList.remove('none');
+    aboutCompanyBtn.classList.add('display-block');
+    aboutCompanyBtn2.classList.remove('display-block');
+    aboutCompanyBtn2.classList.add('none');
 })

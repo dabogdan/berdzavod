@@ -2,9 +2,6 @@
 // You don't need any other library to run this counter
 const onscrollTag = document.getElementById('on_scroll_counter');
 
-// let statusBox = document.getElementById("statusBox");
-// let statusText = document.getElementById("statusText");
-
 function handler(entries, observer) {
     for (entry of entries) {
         if (entry.isIntersecting) {
