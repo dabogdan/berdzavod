@@ -152,10 +152,10 @@ if (window.innerWidth > 992) {
     });
 }
 
-// about company button
+// about company buttons to show full history section
 const aboutCompanyBtn = document.getElementById('about-company-btn-1');
 const aboutCompanyBtn2 = document.getElementById('about-company-btn-2');
-const historyDescription = document.getElementById('expanded-history');
+const historyDescription = document.getElementById('full-history');
 aboutCompanyBtn.addEventListener('click', () => {
     historyDescription.classList.add('display-block');
     historyDescription.classList.remove('none');
