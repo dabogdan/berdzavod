@@ -88,11 +88,10 @@
 
 //products-epilogue section
 .products-epilogue
-  //background-color: darkgrey
-  //color: white
   padding: 40px
   margin: 0 auto
   max-width: 1200px
+  text-align: justify
 
 //offers section
 .offers
@@ -270,30 +269,14 @@
 
 //re-equipment section
 .re-equipment-section
-  grid-template-columns: 4fr 3fr
-  font-family: arial, sans-serif
+  grid-template-columns: 3fr 2fr
+  font-family: raleway-example, sans-serif
   color: $gray
-  line-height: 1
+  line-height: 1.5
   background-color: ghostwhite
-  .re-equipment-right
-    text-align: justify
-    margin: 0 0 0 20px
-    padding: 40px
-    .green-button
-      margin: 2rem 0
-      bottom: 0
-    h2
-      font-size: 2rem
-      margin-bottom: 2rem
-      text-align: left
-    p
-      font-family: arial, sans-serif
-      font-size: 1rem
-      color: $gray
-      line-height: 1.4
-      margin-bottom: 0
-  .re-equipment-left
-    background-image: url(../img/zhatka-dlya-uborki-podsolnechnika.gif)
+  .re-equipment-right-1
+    //grid-column: 2/3
+    background-image: url(../img/remont_zhatki_new.webp)
     -webkit-background-size: cover
     background-size: cover
     z-index: 1
@@ -303,6 +286,31 @@
     height: 100%
     width: 100%
     overflow: hidden
+
+  //.re-equipment-left
+  //  text-align: justify
+  //  margin: 0 0 0 20px
+  //  padding: 40px
+  //  .green-button
+  //    margin: 2rem 0
+  //    bottom: 0
+  //  h2
+  //    font-size: 2rem
+  //    margin-bottom: 2rem
+  //    text-align: left
+  //  p
+  //    font-family: arial, sans-serif
+  //    font-size: 1rem
+  //    color: $gray
+  //    line-height: 1.4
+  //    margin-bottom: 0
+  .re-equipment-left-1
+    position: relative
+    padding: 40px
+    margin: 0
+    height: 100%
+    width: 100%
+
 
 //  
 .questions-section
