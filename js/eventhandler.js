@@ -140,8 +140,6 @@ if (window.innerWidth > 992) {
 } else if (window.innerWidth <= 992) {
     trolley.setAttribute('id', 'popup-trolley');
     trolleyCard.addEventListener("click", () => {
-        console.log('ok');
-
         trolley.classList.add("visible");
         trolley.classList.remove("none");
     });
@@ -156,6 +154,7 @@ if (window.innerWidth > 992) {
 const aboutCompanyBtn = document.getElementById('about-company-btn-1');
 const aboutCompanyBtn2 = document.getElementById('about-company-btn-2');
 const historyDescription = document.getElementById('full-history');
+
 aboutCompanyBtn.addEventListener('click', () => {
     historyDescription.classList.add('display-block');
     historyDescription.classList.remove('none');
@@ -173,3 +172,5 @@ aboutCompanyBtn2.addEventListener('click',()=> {
     aboutCompanyBtn2.classList.remove('display-block');
     aboutCompanyBtn2.classList.add('none');
 })
+
+//menu background

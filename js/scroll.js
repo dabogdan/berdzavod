@@ -1,4 +1,7 @@
 //sections appear on scrolling
+const onscrollSection = document.querySelectorAll('.scroll');
+
+
 if(window.innerWidth >= 992) {
     const scrollAppear = el => {
         el.style.transition = 'all 1s ease-in-out'

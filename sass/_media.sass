@@ -25,7 +25,14 @@
       height: 500px
     .welcome-left
       margin-left: 0
+      h1
+        font-size: 1.5rem
+      p
+        font-size: 1rem
 
+  .products-epilogue, .full-history
+    text-align: left
+      
   .offers
     grid-template-columns: 1fr 1fr
     width: 600px
@@ -36,10 +43,10 @@
     .top-card-3, .top-card-4
       margin-top: 0
 
-  .goods, .pristavki, .valkov, .trolley
-    overflow-y: scroll
-    h1
-      padding-left: 20px
+    .goods, .pristavki, .valkov, .trolley
+      overflow-y: scroll
+      h1
+        padding-left: 20px
 
   .re-equipment-section
     grid-template-columns: 1fr
@@ -62,7 +69,10 @@
   .questions-section
     h1, h2, h3, h4, h5, p
       text-align: center
-          
+    .questions
+      .phones
+        line-height: .7
+
   .footer
     .footer-info
       grid-template-columns: 1fr
@@ -95,8 +105,6 @@
 
   .company-section
     .company-right
-      h2
-        text-align: center
       .counter
         grid-template-columns: 1fr
         margin: 0 auto
@@ -107,6 +115,8 @@
   .questions-section
     .questions
       background-size: auto
+      h1
+        font-size: 1.5rem
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -146,6 +156,18 @@
     .top-card-2
       margin-top: 0
 
+  .questions-section
+    .questions
+      h1
+        font-size: 1.5rem
+      .phones
+        h1
+          font-size: 2rem
+
+  .welcome-section
+    .welcome-left
+      p
+        text-align: left
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
