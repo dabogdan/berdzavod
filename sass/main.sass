@@ -12,35 +12,32 @@
   width: 100%
   line-height: 2
   .navigation
-    grid-template-columns: 4fr 1fr 1fr
-    background: rgba(0,0,0,0.5)
+    grid-template-columns: 10fr 1fr 1fr
+    background: rgba(0,0,0,0.6)
     .menu
       padding: 1rem
+      margin-left: 3.5rem
       a
         margin: 0 1rem
         text-align: left
         font-size: 1.2rem
+        font-weight: 600
         color: white
         &:hover
           color: yellow
     .email
-      padding: 1rem
       margin: 0 1rem
       text-align: left
-      font-size: 1.2rem
       color: white
       &:hover
         color: yellow
+      img
+        width: 3rem
+        padding: .7rem 0 0
+        float: right
     .call-for-action
       display: inline
       padding: .7rem 0
-      a
-        margin: 0 1rem
-        text-align: left
-        font-size: 1.4rem
-        color: white
-        &:hover
-          color: yellow
 
 //header
 .main-header
@@ -195,7 +192,6 @@
         z-index: 1
         &:hover
           background-color: rgba(0,0,0,0.5)
-
     .green-button
       padding: .5rem
       margin: 0 1rem

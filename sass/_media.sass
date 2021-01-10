@@ -43,7 +43,7 @@
 
   .re-equipment-section
     grid-template-columns: 1fr
-    .re-equipment-right-1
+    .re-equipment-right
       display: none
 
   .company-section
@@ -76,6 +76,23 @@
         padding: 0
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+  .navbar
+    .navigation
+      grid-template-columns: 8fr 1fr 1fr
+      .menu
+        margin: 0 .5rem 0 0
+
+  .offers
+    width: 480px
+    .offer-card
+      width: 200px
+      .offer-text
+        .green-button
+          font-size: .8rem
+          width: 160px
+          margin-left: auto
+          margin-right: auto
+
   .company-section
     .company-right
       h2
@@ -93,6 +110,16 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+  .navbar
+    .navigation
+      .menu
+        padding: 1rem .3rem
+        a
+          font-size: .9rem
+          margin: 0 0 0 .7rem
+      .email
+        margin: 0 .3rem
+
   .main-header
     .appear-animation
       margin-left: 2rem
@@ -108,7 +135,10 @@
     .offer-card
       width: 250px
       .green-button
-        margin: 0 auto
+        padding: .5rem
+        margin: 0 1rem
+        position: relative
+        bottom: 15px
     .float-right
       margin-right: auto
     .float-left
