@@ -25,6 +25,8 @@
         color: white
         &:hover
           color: yellow
+        &:active
+          color: yellow
     .email
       margin: 0 1rem
       text-align: left
@@ -157,13 +159,17 @@
     justify-content: center
     color: white
     .offer1-img
-      background: url(../img/Berdzavod-offer-pic1.webp)
+      background: url(../img/Berdzavod-offer-pic1.webp), url("../img/Berdzavod-offer-pic1.jpg")
+      //background-repeat: no-repeat
+      //-o-background-size: cover
+      //-moz-background-size: cover
+      //-webkit-background-size: cover
     .offer2-img
-      background-image: url(../img/Berdzavod-offer-pic2.webp)
+      background-image: url(../img/Berdzavod-offer-pic2.webp), url("../img/Berdzavod-offer-pic2.jpg")
     .offer3-img
-      background-image: url(../img/Berdzavod-offer-pic3.webp)
+      background-image: url(../img/Berdzavod-offer-pic3.webp), url("../img/Berdzavod-offer-pic3.jpg")
     .offer4-img
-      background-image: url(../img/Berdzavod-offer-pic4.webp)
+      background-image: url(../img/Berdzavod-offer-pic4.webp), url("../img/Berdzavod-offer-pic4.jpg")
     .offer1-img, .offer2-img, .offer3-img, .offer4-img
       -webkit-background-size: cover
       background-size: cover
@@ -205,6 +211,8 @@
   margin: auto
   h2
     padding: 0 20px
+  h1
+    padding-left: 10px
 
 //company section
 .company-section
@@ -315,7 +323,7 @@
   background-color: ghostwhite
   margin-bottom: 5px
   .re-equipment-right
-    background-image: url(../img/remont_zhatki_new.webp)
+    background-image: url(../img/remont_zhatki_new.webp), url("../img/remont_zhatki_new.jpg")
     -webkit-background-size: cover
     background-size: cover
     z-index: 1

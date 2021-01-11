@@ -1,31 +1,53 @@
 //sections appear on scrolling
 const onscrollSection = document.querySelectorAll('.scroll');
 
+const options = {
+    threshold: .1,
+    rootMargin: "0px 0px -50px 0px"
+};
 
-if(window.innerWidth >= 992) {
-    const scrollAppear = el => {
-        el.style.transition = 'all 1s ease-in-out'
-        el.classList.add('gone')
-        window.addEventListener('scroll', () => {
-            let elPos = el.getBoundingClientRect().top;
-            let pos = window.innerHeight / 1.1
-            if (elPos <= pos) {
-                el.classList.add('appear')
-                el.classList.remove('gone')
-
-            } else {
-                el.classList.remove('appear')
-                el.classList.add('gone')
-            }
-        })
+const sectionObserver = new IntersectionObserver ((entries, observer) => {
+    for (let entry of entries ) {
+        if(!entry.isIntersecting) {
+            entry.target.classList.add('gone');
+            entry.target.classList.remove('appear');
+            return;
+        } else {
+            entry.target.classList.add('appear');
+            entry.target.classList.remove('gone');
+        }
     }
-    document.querySelectorAll('.scroll').forEach(item => {
-        scrollAppear(item)
-    })
-}
+}, options);
+
+onscrollSection.forEach((section) => {
+    sectionObserver.observe(section);
+})
+
+//
+// if(window.innerWidth >= 992) {
+//     const scrollAppear = el => {
+//         el.style.transition = 'all 1s ease-in-out'
+//         el.classList.add('gone')
+//         window.addEventListener('scroll', () => {
+//             let elPos = el.getBoundingClientRect().top;
+//             let pos = window.innerHeight / 1.1
+//             if (elPos <= pos) {
+//                 el.classList.add('appear')
+//                 el.classList.remove('gone')
+//
+//             } else {
+//                 el.classList.remove('appear')
+//                 el.classList.add('gone')
+//             }
+//         })
+//     }
+//     document.querySelectorAll('.scroll').forEach(item => {
+//         scrollAppear(item)
+//     })
+// }
 
 
-//using this one
+//scrollTop button
 let t1 = 0;
 window.onscroll = scrollUpButtonAppear;
 
@@ -44,3 +66,25 @@ function scrollUp() {
         clearTimeout(t1);
     }
 }
+
+//smooth scrolling to sections on click in navigation and buttons
+// --------------------- DEBOUNCE FUNCTION TO PREVENT PERFORMANCE ISSUES --------------------- //
+
+// const debounce = (func, delay) => {
+//     let inDebounce
+//     return function() {
+//         const context = this
+//         const args = arguments
+//         clearTimeout(inDebounce)
+//         inDebounce = setTimeout(() => func.apply(context, args), delay)
+//     }
+// }
+
+// ------------------------- CHANGE ACTIVE STATE OF LINKS ON SCROLL ------------------------- //
+//select the navigation
+const nav = document.querySelector('.navbar');
+
+// --------------------- INITIALIZE CHRIS FERDINANDI'S SMOOTH SCROLL VANILLA JS LIBRARY --------------------- //
+const scroll = new SmoothScroll('a[href*="#"]', {offset: nav.offsetHeight});
+
+// Thanks to https://github.com/cferdinandi/smooth-scroll

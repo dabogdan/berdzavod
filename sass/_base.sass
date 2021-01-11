@@ -3,6 +3,9 @@
 	&:before, &:after
 		box-sizing: border-box
 
+html
+	//scroll-behavior: smooth
+
 html, body
 	height: 100%
 	margin: 0
@@ -70,3 +73,13 @@ a
 
 .grid
 	display: grid
+
+section
+	//margin-top: -100px
+	//padding-top: 100px
+	//scroll-snap-padding-top: 20rem
+	scroll-behavior: smooth
+	scroll-padding: 100px
+
+.active
+	color: yellow

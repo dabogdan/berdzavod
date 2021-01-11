@@ -17,22 +17,21 @@
 <!--scroll to Top button-->
 <div id="scrollTop" class="scrollTop" onclick="scrollUp()">вверх</div>
 
+<link rel="stylesheet" href="css/main.min.css">
+
 <!--nav-->
 <nav class="navbar" id="navbar">
     <div class="navigation grid">
         <div class="menu">
-            <a href="">О нас</a>
-            <a href="">Продукция</a>
-            <a href="">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#offers">Продукция</a>
+            <a href="#services">Услуги</a>
         </div>
         <a href="mailto:office@zavod-zhatok.com.ua" class="email">
             <img src="img/email.svg" alt="">
         </a>
         <a href='tel:+38(066)749-25-82' class="call-for-action">
-<!--            <a href="" class="call">-->
             <i class="Phone is-animating"></i>
-<!--            </a>-->
-
         </a>
     </div>
 </nav>
@@ -46,14 +45,14 @@
             Максимальные показатели-минимальные потери!</p>
         <h1>Бердянский <br>Завод Жаток</h1>
         <div class="header-text">Оснастка жатки и всё для уборки урожая</div>
-        <a href="#">
+        <a href="#offers">
             <div class="green-button">УЗНАТЬ БОЛЬШЕ</div>
         </a>
     </div>
 </header>
 
 <!--welcome section-->
-<section class="welcome-section grid container scroll">
+<section class="welcome-section grid container scroll gone">
     <div class="welcome-left">
         <h1>Жатка, приставка для уборки, подборщик валков, тележка для перевозки жатки, ремонт жаток, переоборудование
             жатки</h1>
@@ -72,7 +71,7 @@
 </section>
 <!--./welcome-section-->
 
-<section class="products-epilogue scroll">
+<section class="products-epilogue scroll gone" id="offers" name="offers">
     <h3>Все для уборки урожая</h3>
     <h1>Продукция</h1>
     <p>Классификация и модификация оборудования для реализации полевых работ во время жнив или косовицы. Тут вы
@@ -82,8 +81,7 @@
 </section>
 
 <!--offers section-->
-<section class="offers grid container scroll">
-    <!--    <a href="#">-->
+<section class="offers grid container scroll gone">
     <div class="offer-card float-right top-card-1" id="zhatki">
         <div class="offer1-img">
             <div class="offer-text">
@@ -98,8 +96,7 @@
             </div>
         </div>
     </div>
-    <!--    </a>-->
-    <!--    <a href="#">-->
+
     <div class="offer-card float-left top-card-2" id="pristavki-card">
         <div class="offer2-img">
             <div class="offer-text">
@@ -113,8 +110,7 @@
             </div>
         </div>
     </div>
-    <!--    </a>-->
-    <!--    <a href="#">-->
+
     <div class="offer-card float-right top-card-3" id="valkov-card">
         <div class="offer3-img">
             <div class="offer-text">
@@ -128,8 +124,7 @@
             </div>
         </div>
     </div>
-    <!--    </a>-->
-    <!--    <a href="#">-->
+
     <div class="offer-card float-left top-card-4" id="trolley-card">
         <div class="offer4-img">
             <div class="offer-text">
@@ -143,7 +138,6 @@
             </div>
         </div>
     </div>
-    <!--    </a>-->
 </section>
 <!--./offers section-->
 
@@ -1618,7 +1612,7 @@
 <!--./trolley section -->
 
 <!--services-epilogue-->
-<section class="products-epilogue scroll">
+<section class="products-epilogue scroll gone" id="services" name="services">
     <h3>Услуги для жаток</h3>
     <h1>РЕМОНТ ЖАТКИ</h1>
     <p>Ремонтный цех Бердянского Завода Жаток выполняет полный спектр услуг по ремонту. Кроме того, наши специалисты
@@ -1646,7 +1640,7 @@
 <!--./services epilogue-->
 
 <!--re-equipment section-->
-<section class="re-equipment-section grid container scroll">
+<section class="re-equipment-section grid container scroll gone">
     <div class="re-equipment-left">
         <!--        <img src="img/remont zhatok new holland.webp" alt="ремонт жаток в картинках">-->
         <!--        <img src="img/remont zhatki new.webp" alt="ремонтировать жатку картинка">-->
@@ -1682,7 +1676,7 @@
 <!--./re-equipment-section-->
 
 <!--company section-->
-<section class="company-section grid container scroll">
+<section class="company-section grid container scroll gone" id="about" name="about">
     <div class="company-left"></div>
     <div class="company-right">
         <h1>О предприятии</h1>
@@ -1816,7 +1810,7 @@
 
 
 <!--questions-section-->
-<section class="questions-section grid scroll">
+<section class="questions-section grid scroll gone">
     <div class="questions">
         <h1>Если у Вас остались вопросы, Вы можете <br>обратиться к нашим специалистам</h1>
         <div class="phones"><h1>(050)0317543<br><br>(098)0317543</h1></div>
@@ -1828,7 +1822,7 @@
 <!--./questions-section-->
 
 <!--footer-->
-<footer class="footer scroll">
+<footer class="footer scroll gone" id="footer">
     <div class="container grid footer-info">
         <div class="trust">
             <h3>Доверяйте профессионалам. Опыт в создании жаток с 2000 года.</h3>
@@ -1864,10 +1858,10 @@
 </footer>
 <!--./footer-->
 
-<link rel="stylesheet" href="css/main.min.css">
 <link rel="stylesheet" href="css/products.css">
 <link rel="stylesheet" href="css/counter.css">
 <link rel="stylesheet" href="css/phone.css">
+<script src="libs/smooth-scroll/smooth-scroll.min.js"></script>
 <script src="js/scripts.min.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/eventhandler.js"></script>
