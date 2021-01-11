@@ -2,8 +2,8 @@
 const onscrollSection = document.querySelectorAll('.scroll');
 
 const options = {
-    threshold: .1,
-    rootMargin: "0px 0px -50px 0px"
+    threshold: 0,
+    rootMargin: "0px"
 };
 
 const sectionObserver = new IntersectionObserver ((entries, observer) => {
@@ -14,7 +14,7 @@ const sectionObserver = new IntersectionObserver ((entries, observer) => {
             return;
         } else {
             entry.target.classList.add('appear');
-            entry.target.classList.remove('gone');
+            // entry.target.classList.remove('gone');
         }
     }
 }, options);
