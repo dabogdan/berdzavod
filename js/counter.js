@@ -3,7 +3,7 @@
 const onscrollTag = document.getElementById('on_scroll_counter');
 
 function handler(entries, observer) {
-    for (entry of entries) {
+    for (let entry of entries) {
         if (entry.isIntersecting) {
             beginCounting();
         } else {
@@ -19,7 +19,6 @@ function handler(entries, observer) {
 let observer = new IntersectionObserver(handler);
 observer.observe(document.getElementById("on_scroll_counter"));
 
-
 let beginCounting = () => {
     const animationDuration = 2000;
     const frameDuration = 1000 / 30;
@@ -29,8 +28,7 @@ let beginCounting = () => {
 
     const animateCountUp = el => {
         let frame = 0;
-        const countTo = parseInt(el.innerHTML, 10);
-
+        const countTo = parseInt(el.id, 10);
         const counter = setInterval(() => {
             frame++;
             const progress = easeOutQuad(frame / totalFrames);

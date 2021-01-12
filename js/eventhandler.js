@@ -150,6 +150,32 @@ if (window.innerWidth > 992) {
     });
 }
 
+//android back button to close the overlay
+// document.addEventListener('deviceready',function(event) {
+//     document.addEventListener('backbutton', function(e) {
+//         // Logic to be executed on back button event
+//         // disable
+//         alert('button is pressed');
+//         e.preventDefault();
+//         trolley.classList.add('none');
+//         trolley.classList.remove('display-block');
+//         // disable valkov
+//         valkov.classList.remove('display-block');
+//         valkov.classList.add('none');
+//         //disable pristavki
+//         pristavki.classList.remove('display-block');
+//         pristavki.classList.add('none');
+//         //disable goods
+//         goods.classList.add("none");
+//         goods.classList.remove("display-block");
+//     }, false)
+// }, false);
+
+// document.addEventListener('backbutton', onBackKeyDown, false);
+// function onBackKeyDown(event) {
+//
+// }
+
 // about company buttons to show full history section
 const aboutCompanyBtn = document.getElementById('about-company-btn-1');
 const aboutCompanyBtn2 = document.getElementById('about-company-btn-2');
