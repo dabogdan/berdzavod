@@ -366,7 +366,8 @@
       margin: 2rem auto
 
 .footer
-  background-image: url("../img/Berdzavod-footerbg-1.webp"), url("../img/Berdzavod-footerbg-1.jpg")
+  //background-image: url("../img/Berdzavod-footerbg-1.webp"), url("../img/Berdzavod-footerbg-1.jpg")
+  background-color: #293a43
   -webkit-background-size: cover
   background-size: cover
   background-position: center
@@ -376,18 +377,35 @@
     grid-gap: 20px
     justify-content: center
     color: white
+    padding: 30px
     .trust
-      padding: 30px
       text-align: center
       h3
         padding: 20px
-    .phone-no, .schedule
+      img
+        width: 450px
+        height: 33%
+      .social-icons
+        display: flex
+        padding-left: 0
+        justify-content: center
+        li
+          padding: 0 20px
+          font-size: 70px
+          list-style: none
+          a
+            color: white
+    .phone-no, .schedule, .quick-links
       padding: 30px 10px 0
+      p
+        min-width: 215px
       a
         color: white
         &:hover
           color: yellow
-          text-decoration: underline
+      ul
+        li
+          list-style: none
   .copyright
     color: white
     text-align: center
@@ -395,8 +413,6 @@
     a
       color: white
       &:hover
-        text-decoration: underline
-
 
 //appearing text in the heading
 .appear-animation
