@@ -29,11 +29,13 @@ if (window.innerWidth > 992) {
     zhatki.addEventListener("click", () => {
         goods.classList.add("visible");
         goods.classList.remove("none");
+        document.getElementsByTagName("body")[0].classList.add('no-scroll');
     });
 
     closeBtn[0].addEventListener('click', () => {
         goods.classList.add("none");
         goods.classList.remove("visible");
+        document.getElementsByTagName("body")[0].classList.remove('no-scroll');
     });
 }
 
@@ -66,11 +68,13 @@ if (window.innerWidth > 992) {
     pristavkiCard.addEventListener("click", () => {
         pristavki.classList.add("visible");
         pristavki.classList.remove("none");
+        document.getElementsByTagName("body")[0].classList.add('no-scroll');
     });
 
     prCloseBtn[0].addEventListener('click', () => {
         pristavki.classList.add("none");
         pristavki.classList.remove("visible");
+        document.getElementsByTagName("body")[0].classList.remove('no-scroll');
     });
 }
 
@@ -104,11 +108,13 @@ if (window.innerWidth > 992) {
     valkovCard.addEventListener("click", () => {
         valkov.classList.add("visible");
         valkov.classList.remove("none");
+        document.getElementsByTagName("body")[0].classList.add('no-scroll');
     });
 
     vCloseBtn[0].addEventListener('click', () => {
         valkov.classList.add("none");
         valkov.classList.remove("visible");
+        document.getElementsByTagName("body")[0].classList.remove('no-scroll');
     });
 }
 
@@ -142,11 +148,13 @@ if (window.innerWidth > 992) {
     trolleyCard.addEventListener("click", () => {
         trolley.classList.add("visible");
         trolley.classList.remove("none");
+        document.getElementsByTagName("body")[0].classList.add('no-scroll');
     });
 
     tCloseBtn[0].addEventListener('click', () => {
         trolley.classList.add("none");
         trolley.classList.remove("visible");
+        document.getElementsByTagName("body")[0].classList.remove('no-scroll');
     });
 }
 

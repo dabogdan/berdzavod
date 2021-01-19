@@ -79,10 +79,9 @@ label input:checked {
 .pr-tab-content,
 .v-tab-content,
 .t-tab-content {
-    padding: 30px;
+    padding: 20px 20px 100px;
     background-color: #ffffff;
     border: 1px solid #ddd;
-    /*box-shadow: 2px 10px 6px -3px rgba(0, 0, 0, 0.5);*/
     text-align: justify;
 }
 
