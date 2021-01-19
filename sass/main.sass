@@ -471,7 +471,60 @@
     transition: .5s
     box-shadow: 0 0 5px rgba(0,0,0,0.5)
 
+.error404
+  background-image: url("../img/Berdzavod-footerbg-1.webp"), url("../img/Berdzavod-footerbg-1.jpg")
+  background-color: #293a43
+  -webkit-background-size: cover
+  background-size: cover
+  background-position: center
+  h1
+    color: white
+    font-size: 100px
+    text-align: center
+    padding-top: 100px
+    margin-top: 0
+  .green-button
+    margin: 6rem auto
 
+  .sections404
+    grid-template-columns: 2fr 1fr 1fr
+    grid-gap: 20px
+    justify-content: center
+    color: white
+    padding: 30px
+    .trust
+      img
+        width: 450px
+        height: 33%
+      .social-icons
+        display: flex
+        padding-left: 0
+        justify-content: center
+        li
+          padding: 0 20px
+          font-size: 70px
+          list-style: none
+          a
+            color: white
+    .phone-no, .schedule, .quick-links
+      padding: 30px 10px 0
+      p
+        min-width: 215px
+      a
+        color: white
+        &:hover
+          color: yellow
+      ul
+        li
+          list-style: none
+  .copyright
+    color: white
+    text-align: center
+    padding: 30px
+    a
+      color: white
+      &:hover
+        color: yellow
 
 
 @import "media" // Всегда в конце

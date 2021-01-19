@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!-- For IE <= 9 -->
+<!--[if IE]>
+<script type="text/javascript">
+    window.location = "IE.html";
+</script>
+<![endif]-->
 
+<!-- For IE > 9 -->
+<script type="text/javascript">
+    if (window.navigator.msPointerEnabled) {
+        window.location = "IE.html";
+    }
+</script>
 <head>
-    <!--    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
-
     <meta charset="utf-8">
 
     <title>Бердянский Завод Жаток - оборудование для уборки зерновых, бобовых, риса, рапса, сои, подсолнечника. С 2000
