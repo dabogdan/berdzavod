@@ -1954,6 +1954,49 @@
 </section>
 <!--./questions-section-->
 
+<!--contact section-->
+
+<section style="text-align: center;">
+    <form class="SendMail row " method="POST" enctype="multipart/form-data">
+        <h6 style="font-size:20pt" >СДЕЛАТЬ ЗАПРОС ЦЕНЫ</h6>
+        <input type="hidden" name="type_name" value="Узнать цену" />
+        <div>
+            <div>
+                <i style="color: white"></i>
+                <input type="text" name="Имя" placeholder="Ваше имя *" data-msg-required="Пожалуйста заполните" >
+            </div>
+
+            <div>
+                <i style="color: white"></i>
+                <input type="text" name="Продукция или Услуга" placeholder="Что вас заинтересовало?*" data-msg-required="Пожалуйста заполните" >
+            </div>
+            <div>
+                <i style="color: white"></i>
+                <input type="text" name="phone" placeholder="Номер вашего телефона*" data-msg-required="Пожалуйста заполните" >
+            </div>
+            <div>
+                <i style="color: white" ></i>
+
+                <input type="email"name="email" placeholder="Ваша электронная почта*" data-msg-required="Пожалуйста заполните" >
+            </div>
+            <div>
+                <i style="color: white" ></i>
+
+                <input type="text" name="Жатка" placeholder="О вашем комбайне, жатке*" data-msg-required="Пожалуйста заполните" >
+            </div>
+            <div><br>
+
+                <div> <input type="file" name="file" value="Прикрепить фото" ></div>
+
+                <button type="submit" class="green-button">ОТПРАВИТЬ</button>
+
+            </div>
+        </div>
+    </form>
+    </div>
+</section>
+<!--contact section-->
+
 <!--footer-->
 <footer class="footer scroll " id="footer">
     <div class="container grid footer-info">
@@ -2082,6 +2125,9 @@
     </div>
 </footer>
 <!--./footer-->
+
+<!-- Contact Form -->
+<script src="vg/www/templates/modules/mail/js/mail.js"></script>
 
 <link rel="stylesheet" href="css/products.css">
 <link rel="stylesheet" href="css/counter.css">
