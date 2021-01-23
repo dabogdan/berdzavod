@@ -26,7 +26,8 @@
     <link rel="preload" href="fonts/RalewayBold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/ArialRegular.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/RalewayRegular.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" href="libs/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="libs/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font"
+          type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body>
@@ -492,13 +493,13 @@
             <p>Фото</p>
             <div class="pictures grid">
                 <span><img src="img/travyanaya/travyanaya zhatka.webp"
-                     alt=""
-                     onerror="this.onerror=null; this.src='img/travyanaya/travyanaya zhatka.jpg'"
-                     class="pics"></span>
+                           alt=""
+                           onerror="this.onerror=null; this.src='img/travyanaya/travyanaya zhatka.jpg'"
+                           class="pics"></span>
                 <span><img src="img/travyanaya/zhatka travyanaya.webp"
-                     alt=""
-                     onerror="this.onerror=null; this.src='img/travyanaya/zhatka travyanaya.jpg'"
-                     class="pics"></span>
+                           alt=""
+                           onerror="this.onerror=null; this.src='img/travyanaya/zhatka travyanaya.jpg'"
+                           class="pics"></span>
             </div>
         </div>
     </div>
@@ -924,13 +925,13 @@
             <p>Фото</p>
             <div class="pictures grid">
                 <span><img src="img/for_sunflower/zhatka dlya podsolnechnika.webp"
-                     alt=""
-                     onerror="this.onerror=null;this.scr='img/for_sunflower/zhatka dlya podsolnechnika.jpg'"
-                     class="pics"></span>
+                           alt=""
+                           onerror="this.onerror=null;this.scr='img/for_sunflower/zhatka dlya podsolnechnika.jpg'"
+                           class="pics"></span>
                 <span><img src="img/for_sunflower/zhatka dlya uborki podsolnechnika.webp"
-                     alt=""
-                     onerror="this.onerror=null;this.scr='img/for_sunflower/zhatka dlya uborki podsolnechnika.jpg'"
-                     class="pics"></span>
+                           alt=""
+                           onerror="this.onerror=null;this.scr='img/for_sunflower/zhatka dlya uborki podsolnechnika.jpg'"
+                           class="pics"></span>
             </div>
         </div>
     </div>
@@ -1947,7 +1948,7 @@
     <div class="questions">
         <h1>Если у Вас остались вопросы, Вы можете <br>обратиться к нашим специалистам</h1>
         <div class="phones"><h1>(050)0317543<br><br>(098)0317543</h1></div>
-        <a href="">
+        <a href="mailto:office@zavod-zhatok.com.ua">
             <div class="white-button">Отправить сообщение</div>
         </a>
     </div>
@@ -1956,44 +1957,43 @@
 
 <!--contact section-->
 
-<section style="text-align: center;">
+<section class="price-query scroll container">
     <form class="SendMail row " method="POST" enctype="multipart/form-data">
-        <h6 style="font-size:20pt" >СДЕЛАТЬ ЗАПРОС ЦЕНЫ</h6>
-        <input type="hidden" name="type_name" value="Узнать цену" />
+        <h6>СДЕЛАТЬ ЗАПРОС ЦЕНЫ</h6>
+        <input type="hidden" name="type_name" value="Узнать цену"/>
         <div>
             <div>
                 <i style="color: white"></i>
-                <input type="text" name="Имя" placeholder="Ваше имя *" data-msg-required="Пожалуйста заполните" >
+                <input class="text-input" type="text" name="Имя" placeholder="Ваше имя *" data-msg-required="Пожалуйста заполните">
             </div>
 
             <div>
                 <i style="color: white"></i>
-                <input type="text" name="Продукция или Услуга" placeholder="Что вас заинтересовало?*" data-msg-required="Пожалуйста заполните" >
+                <input class="text-input" type="text" name="Продукция или Услуга" placeholder="Что вас заинтересовало?*"
+                       data-msg-required="Пожалуйста заполните">
             </div>
             <div>
                 <i style="color: white"></i>
-                <input type="text" name="phone" placeholder="Номер вашего телефона*" data-msg-required="Пожалуйста заполните" >
+                <input class="text-input" type="text" name="phone" placeholder="Номер вашего телефона*"
+                       data-msg-required="Пожалуйста заполните">
             </div>
             <div>
-                <i style="color: white" ></i>
+                <i style="color: white"></i>
 
-                <input type="email"name="email" placeholder="Ваша электронная почта*" data-msg-required="Пожалуйста заполните" >
+                <input class="text-input" type="email" name="email" placeholder="Ваша электронная почта*"
+                       data-msg-required="Пожалуйста заполните">
             </div>
             <div>
-                <i style="color: white" ></i>
-
-                <input type="text" name="Жатка" placeholder="О вашем комбайне, жатке*" data-msg-required="Пожалуйста заполните" >
+                <i style="color: white"></i>
+                <textarea class="about-your-goods" type="text" name="Жатка" placeholder="О вашем комбайне, жатке*"
+                          data-msg-required="Пожалуйста заполните" required cols="100" wrap="hard" resize="none"></textarea>
             </div>
             <div><br>
-
-                <div> <input type="file" name="file" value="Прикрепить фото" ></div>
-
+                <div><input type="file" name="file" value="Прикрепить фото"></div>
                 <button type="submit" class="green-button">ОТПРАВИТЬ</button>
-
             </div>
         </div>
     </form>
-    </div>
 </section>
 <!--contact section-->
 
@@ -2037,17 +2037,11 @@
                 <br>(061)2140129
                 <br><a href="mailto:office@zavod-zhatok.com.ua">office@zavod-zhatok.com.ua</a>
             </p>
-            <!--            <div class="schedule">-->
             <p>
                 <strong>Розклад роботи:</strong>
                 <br> Понеділок - П'ятниця: 8:00 - 18:00
                 <br> Субота: 9:00 - 16:00
             </p>
-            <!--            </div>-->
-            <!--            <div class="col-md-3">-->
-            <!--                font awesome-->
-
-            <!--            </div>-->
         </div>
         <div class="quick-links">
             <ul>
