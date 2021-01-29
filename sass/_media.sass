@@ -63,6 +63,8 @@
       p
         font-size: .9rem
       .counter
+        p
+          text-align: center
         .counter-item
           width: 200px
           margin: auto
@@ -109,6 +111,7 @@
         ul
           padding-left: 0
           justify-content: center
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .navbar
@@ -138,6 +141,12 @@
     .pictures
       grid-template-columns: 320px
 
+  .re-equipment-section
+    grid-template-columns: 1fr
+    .re-equipment-right
+      display: block
+      background-image: url("../img/remont_zhatki_mobile.webp"), url("../img/remont_zhatki_mobile.jpg")
+      height: 300px
 
   .company-section
     .company-left
