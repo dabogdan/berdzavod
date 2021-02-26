@@ -8,44 +8,27 @@ const options = {
 
 const sectionObserver = new IntersectionObserver ((entries, observer) => {
     for (let entry of entries ) {
-        if(!entry.isIntersecting) {
-            entry.target.classList.add('gone');
-            entry.target.classList.remove('appear');
-            return;
-        } else {
+        //intersection once
+        if(entry.isIntersecting) {
             entry.target.classList.add('appear');
-            // entry.target.classList.remove('gone');
+            observer.unobserve(entry.target);
+            return;
         }
+        // always intersection
+        // if(!entry.isIntersecting) {
+        //     entry.target.classList.add('gone');
+        //     entry.target.classList.remove('appear');
+        //     return;
+        // } else {
+        //     entry.target.classList.add('appear');
+        //     // entry.target.classList.remove('gone');
+        // }
     }
 }, options);
 
 onscrollSection.forEach((section) => {
     sectionObserver.observe(section);
 })
-
-//
-// if(window.innerWidth >= 992) {
-//     const scrollAppear = el => {
-//         el.style.transition = 'all 1s ease-in-out'
-//         el.classList.add('gone')
-//         window.addEventListener('scroll', () => {
-//             let elPos = el.getBoundingClientRect().top;
-//             let pos = window.innerHeight / 1.1
-//             if (elPos <= pos) {
-//                 el.classList.add('appear')
-//                 el.classList.remove('gone')
-//
-//             } else {
-//                 el.classList.remove('appear')
-//                 el.classList.add('gone')
-//             }
-//         })
-//     }
-//     document.querySelectorAll('.scroll').forEach(item => {
-//         scrollAppear(item)
-//     })
-// }
-
 
 //scrollTop button
 let t1 = 0;
